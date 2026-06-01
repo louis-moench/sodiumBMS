@@ -145,6 +145,15 @@ Discarded input sections
  .text          0x00000000        0x0 CMakeFiles/sodiumBMS.dir/Core/Src/main.c.obj
  .data          0x00000000        0x0 CMakeFiles/sodiumBMS.dir/Core/Src/main.c.obj
  .bss           0x00000000        0x0 CMakeFiles/sodiumBMS.dir/Core/Src/main.c.obj
+ .bss.adc_ready
+                0x00000000        0x1 CMakeFiles/sodiumBMS.dir/Core/Src/main.c.obj
+ .bss.volts     0x00000000        0x2 CMakeFiles/sodiumBMS.dir/Core/Src/main.c.obj
+ .bss.adc_buffer
+                0x00000000        0x6 CMakeFiles/sodiumBMS.dir/Core/Src/main.c.obj
+ .bss.bufferIndex
+                0x00000000        0x4 CMakeFiles/sodiumBMS.dir/Core/Src/main.c.obj
+ .text.HAL_ADC_ConvCpltCallback
+                0x00000000       0x78 CMakeFiles/sodiumBMS.dir/Core/Src/main.c.obj
  .group         0x00000000        0xc CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_it.c.obj
  .group         0x00000000        0xc CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_it.c.obj
  .group         0x00000000        0xc CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_it.c.obj
@@ -263,7 +272,7 @@ Discarded input sections
  .data          0x00000000        0x0 CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_hal_msp.c.obj
  .bss           0x00000000        0x0 CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_hal_msp.c.obj
  .text.HAL_ADC_MspDeInit
-                0x00000000       0x3c CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+                0x00000000       0x68 CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_hal_msp.c.obj
  .text.HAL_UART_MspDeInit
                 0x00000000       0x3c CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_hal_msp.c.obj
  .debug_macro   0x00000000      0xab4 CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_hal_msp.c.obj
@@ -592,8 +601,12 @@ Discarded input sections
                 0x00000000       0x14 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
  .text.HAL_ADC_MspDeInit
                 0x00000000       0x14 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
+ .text.HAL_ADC_Start
+                0x00000000      0x1a4 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
  .text.HAL_ADC_Stop
                 0x00000000       0x66 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
+ .text.HAL_ADC_PollForConversion
+                0x00000000      0x116 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
  .text.HAL_ADC_PollForEvent
                 0x00000000       0xb8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
  .text.HAL_ADC_Start_IT
@@ -606,6 +619,8 @@ Discarded input sections
                 0x00000000      0x228 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
  .text.HAL_ADC_Stop_DMA
                 0x00000000       0xb4 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
+ .text.HAL_ADC_GetValue
+                0x00000000       0x1a cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
  .text.HAL_ADC_ConvCpltCallback
                 0x00000000       0x14 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
  .text.HAL_ADC_ConvHalfCpltCallback
@@ -1536,8 +1551,6 @@ Discarded input sections
  .text          0x00000000        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
  .data          0x00000000        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
  .bss           0x00000000        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
- .text.HAL_DMA_Init
-                0x00000000      0x15c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
  .text.HAL_DMA_DeInit
                 0x00000000       0xbc cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
  .text.HAL_DMA_Start
@@ -1550,8 +1563,6 @@ Discarded input sections
                 0x00000000       0x44 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
  .text.HAL_DMA_PollForTransfer
                 0x00000000      0x1be cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
- .text.HAL_DMA_IRQHandler
-                0x00000000      0x314 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
  .text.HAL_DMA_RegisterCallback
                 0x00000000       0xa8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
  .text.HAL_DMA_UnRegisterCallback
@@ -1562,19 +1573,6 @@ Discarded input sections
                 0x00000000       0x18 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
  .text.DMA_SetConfig
                 0x00000000       0x5c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
- .text.DMA_CalcBaseAndBitshift
-                0x00000000       0x6c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
- .text.DMA_CheckFifoParam
-                0x00000000       0xf8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
- .rodata.flagBitshiftOffset.0
-                0x00000000        0x8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
- .debug_info    0x00000000      0x8cf cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
- .debug_abbrev  0x00000000      0x264 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
- .debug_aranges
-                0x00000000       0x90 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
- .debug_rnglists
-                0x00000000       0x70 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
- .debug_macro   0x00000000      0x19f cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
  .debug_macro   0x00000000      0xab4 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
  .debug_macro   0x00000000      0x29b cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
  .debug_macro   0x00000000       0x2e cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
@@ -1611,12 +1609,6 @@ Discarded input sections
  .debug_macro   0x00000000       0x89 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
  .debug_macro   0x00000000      0x2aa cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
  .debug_macro   0x00000000      0x126 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
- .debug_line    0x00000000      0xd72 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
- .debug_str     0x00000000    0xcebf3 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
- .comment       0x00000000       0x27 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
- .debug_frame   0x00000000      0x250 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
- .ARM.attributes
-                0x00000000       0x34 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
  .group         0x00000000        0xc cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj
  .group         0x00000000        0xc cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj
  .group         0x00000000        0xc cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj
@@ -1884,8 +1876,6 @@ Discarded input sections
  .text          0x00000000        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
  .data          0x00000000        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
  .bss           0x00000000        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
- .text.__NVIC_EnableIRQ
-                0x00000000       0x3c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
  .text.__NVIC_DisableIRQ
                 0x00000000       0x48 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
  .text.__NVIC_GetPendingIRQ
@@ -1902,8 +1892,6 @@ Discarded input sections
                 0x00000000       0x6e cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
  .text.__NVIC_SystemReset
                 0x00000000       0x2c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
- .text.HAL_NVIC_EnableIRQ
-                0x00000000       0x1c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
  .text.HAL_NVIC_DisableIRQ
                 0x00000000       0x1c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
  .text.HAL_NVIC_SystemReset
@@ -2576,7 +2564,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/crtn.o
                 0x08000000                g_pfnVectors
                 0x080001c4                        . = ALIGN (0x4)
 
-.text           0x08000200     0x3900
+.text           0x08000200     0x3eac
                 0x08000200                        . = ALIGN (0x4)
  *(.text)
  .text          0x08000200       0x88 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/crtbegin.o
@@ -2630,369 +2618,386 @@ LOAD /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/crtn.o
  .text          0x08001460       0x14 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-msizer.o)
                 0x08001460                _malloc_usable_size_r
  *(.text*)
- .text.main     0x08001474       0x78 CMakeFiles/sodiumBMS.dir/Core/Src/main.c.obj
+ .text.main     0x08001474      0x10c CMakeFiles/sodiumBMS.dir/Core/Src/main.c.obj
                 0x08001474                main
  .text.SystemClock_Config
-                0x080014ec       0xc0 CMakeFiles/sodiumBMS.dir/Core/Src/main.c.obj
-                0x080014ec                SystemClock_Config
+                0x08001580       0xc0 CMakeFiles/sodiumBMS.dir/Core/Src/main.c.obj
+                0x08001580                SystemClock_Config
  .text.MX_ADC1_Init
-                0x080015ac       0xa4 CMakeFiles/sodiumBMS.dir/Core/Src/main.c.obj
+                0x08001640       0xa4 CMakeFiles/sodiumBMS.dir/Core/Src/main.c.obj
+ .text.MX_ADC2_Init
+                0x080016e4       0xa4 CMakeFiles/sodiumBMS.dir/Core/Src/main.c.obj
  .text.MX_USART2_UART_Init
-                0x08001650       0x54 CMakeFiles/sodiumBMS.dir/Core/Src/main.c.obj
+                0x08001788       0x54 CMakeFiles/sodiumBMS.dir/Core/Src/main.c.obj
+ .text.MX_DMA_Init
+                0x080017dc       0x40 CMakeFiles/sodiumBMS.dir/Core/Src/main.c.obj
  .text.MX_GPIO_Init
-                0x080016a4       0xa4 CMakeFiles/sodiumBMS.dir/Core/Src/main.c.obj
+                0x0800181c       0xa4 CMakeFiles/sodiumBMS.dir/Core/Src/main.c.obj
  .text.Error_Handler
-                0x08001748        0xc CMakeFiles/sodiumBMS.dir/Core/Src/main.c.obj
-                0x08001748                Error_Handler
+                0x080018c0        0xc CMakeFiles/sodiumBMS.dir/Core/Src/main.c.obj
+                0x080018c0                Error_Handler
  .text.NMI_Handler
-                0x08001754        0x8 CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08001754                NMI_Handler
+                0x080018cc        0x8 CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_it.c.obj
+                0x080018cc                NMI_Handler
  .text.HardFault_Handler
-                0x0800175c        0x8 CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_it.c.obj
-                0x0800175c                HardFault_Handler
+                0x080018d4        0x8 CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_it.c.obj
+                0x080018d4                HardFault_Handler
  .text.MemManage_Handler
-                0x08001764        0x8 CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08001764                MemManage_Handler
+                0x080018dc        0x8 CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_it.c.obj
+                0x080018dc                MemManage_Handler
  .text.BusFault_Handler
-                0x0800176c        0x8 CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_it.c.obj
-                0x0800176c                BusFault_Handler
+                0x080018e4        0x8 CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_it.c.obj
+                0x080018e4                BusFault_Handler
  .text.UsageFault_Handler
-                0x08001774        0x8 CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08001774                UsageFault_Handler
+                0x080018ec        0x8 CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_it.c.obj
+                0x080018ec                UsageFault_Handler
  .text.SVC_Handler
-                0x0800177c        0xe CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_it.c.obj
-                0x0800177c                SVC_Handler
+                0x080018f4        0xe CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_it.c.obj
+                0x080018f4                SVC_Handler
  .text.DebugMon_Handler
-                0x0800178a        0xe CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_it.c.obj
-                0x0800178a                DebugMon_Handler
+                0x08001902        0xe CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08001902                DebugMon_Handler
  .text.PendSV_Handler
-                0x08001798        0xe CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08001798                PendSV_Handler
+                0x08001910        0xe CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08001910                PendSV_Handler
  .text.SysTick_Handler
-                0x080017a6        0xc CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_it.c.obj
-                0x080017a6                SysTick_Handler
- *fill*         0x080017b2        0x2 
+                0x0800191e        0xc CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_it.c.obj
+                0x0800191e                SysTick_Handler
+ *fill*         0x0800192a        0x2 
+ .text.DMA2_Stream0_IRQHandler
+                0x0800192c       0x14 CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_it.c.obj
+                0x0800192c                DMA2_Stream0_IRQHandler
  .text.HAL_MspInit
-                0x080017b4       0x50 CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_hal_msp.c.obj
-                0x080017b4                HAL_MspInit
+                0x08001940       0x50 CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+                0x08001940                HAL_MspInit
  .text.HAL_ADC_MspInit
-                0x08001804       0x88 CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_hal_msp.c.obj
-                0x08001804                HAL_ADC_MspInit
+                0x08001990      0x150 CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+                0x08001990                HAL_ADC_MspInit
  .text.HAL_UART_MspInit
-                0x0800188c       0x90 CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_hal_msp.c.obj
-                0x0800188c                HAL_UART_MspInit
- .text._sbrk    0x0800191c       0x6c CMakeFiles/sodiumBMS.dir/Core/Src/sysmem.c.obj
-                0x0800191c                _sbrk
+                0x08001ae0       0x90 CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+                0x08001ae0                HAL_UART_MspInit
+ .text._sbrk    0x08001b70       0x6c CMakeFiles/sodiumBMS.dir/Core/Src/sysmem.c.obj
+                0x08001b70                _sbrk
  .text.Reset_Handler
-                0x08001988       0x50 CMakeFiles/sodiumBMS.dir/startup_stm32f446xx.s.obj
-                0x08001988                Reset_Handler
+                0x08001bdc       0x50 CMakeFiles/sodiumBMS.dir/startup_stm32f446xx.s.obj
+                0x08001bdc                Reset_Handler
  .text.Default_Handler
-                0x080019d8        0x2 CMakeFiles/sodiumBMS.dir/startup_stm32f446xx.s.obj
-                0x080019d8                RTC_Alarm_IRQHandler
-                0x080019d8                EXTI2_IRQHandler
-                0x080019d8                TIM8_CC_IRQHandler
-                0x080019d8                FMPI2C1_EV_IRQHandler
-                0x080019d8                SPI4_IRQHandler
-                0x080019d8                TIM1_CC_IRQHandler
-                0x080019d8                DMA2_Stream5_IRQHandler
-                0x080019d8                DMA1_Stream5_IRQHandler
-                0x080019d8                PVD_IRQHandler
-                0x080019d8                SDIO_IRQHandler
-                0x080019d8                TAMP_STAMP_IRQHandler
-                0x080019d8                CAN2_RX1_IRQHandler
-                0x080019d8                EXTI3_IRQHandler
-                0x080019d8                TIM8_TRG_COM_TIM14_IRQHandler
-                0x080019d8                TIM1_UP_TIM10_IRQHandler
-                0x080019d8                TIM8_UP_TIM13_IRQHandler
-                0x080019d8                I2C3_ER_IRQHandler
-                0x080019d8                EXTI0_IRQHandler
-                0x080019d8                I2C2_EV_IRQHandler
-                0x080019d8                DMA1_Stream2_IRQHandler
-                0x080019d8                CAN1_RX0_IRQHandler
-                0x080019d8                FPU_IRQHandler
-                0x080019d8                OTG_HS_WKUP_IRQHandler
-                0x080019d8                CAN2_SCE_IRQHandler
-                0x080019d8                DMA2_Stream2_IRQHandler
-                0x080019d8                SPI1_IRQHandler
-                0x080019d8                TIM6_DAC_IRQHandler
-                0x080019d8                TIM1_BRK_TIM9_IRQHandler
-                0x080019d8                DCMI_IRQHandler
-                0x080019d8                CAN2_RX0_IRQHandler
-                0x080019d8                DMA2_Stream3_IRQHandler
-                0x080019d8                SAI2_IRQHandler
-                0x080019d8                USART6_IRQHandler
-                0x080019d8                USART3_IRQHandler
-                0x080019d8                CAN1_RX1_IRQHandler
-                0x080019d8                UART5_IRQHandler
-                0x080019d8                DMA2_Stream0_IRQHandler
-                0x080019d8                TIM4_IRQHandler
-                0x080019d8                QUADSPI_IRQHandler
-                0x080019d8                I2C1_EV_IRQHandler
-                0x080019d8                DMA1_Stream6_IRQHandler
-                0x080019d8                DMA1_Stream1_IRQHandler
-                0x080019d8                UART4_IRQHandler
-                0x080019d8                TIM3_IRQHandler
-                0x080019d8                RCC_IRQHandler
-                0x080019d8                TIM8_BRK_TIM12_IRQHandler
-                0x080019d8                Default_Handler
-                0x080019d8                CEC_IRQHandler
-                0x080019d8                EXTI15_10_IRQHandler
-                0x080019d8                ADC_IRQHandler
-                0x080019d8                DMA1_Stream7_IRQHandler
-                0x080019d8                TIM7_IRQHandler
-                0x080019d8                CAN2_TX_IRQHandler
-                0x080019d8                TIM5_IRQHandler
-                0x080019d8                DMA2_Stream7_IRQHandler
-                0x080019d8                I2C3_EV_IRQHandler
-                0x080019d8                EXTI9_5_IRQHandler
-                0x080019d8                RTC_WKUP_IRQHandler
-                0x080019d8                SPDIF_RX_IRQHandler
-                0x080019d8                SPI2_IRQHandler
-                0x080019d8                OTG_HS_EP1_IN_IRQHandler
-                0x080019d8                DMA1_Stream0_IRQHandler
-                0x080019d8                CAN1_TX_IRQHandler
-                0x080019d8                FMPI2C1_ER_IRQHandler
-                0x080019d8                EXTI4_IRQHandler
-                0x080019d8                OTG_HS_EP1_OUT_IRQHandler
-                0x080019d8                WWDG_IRQHandler
-                0x080019d8                TIM2_IRQHandler
-                0x080019d8                OTG_FS_WKUP_IRQHandler
-                0x080019d8                TIM1_TRG_COM_TIM11_IRQHandler
-                0x080019d8                OTG_HS_IRQHandler
-                0x080019d8                EXTI1_IRQHandler
-                0x080019d8                USART2_IRQHandler
-                0x080019d8                I2C2_ER_IRQHandler
-                0x080019d8                DMA2_Stream1_IRQHandler
-                0x080019d8                CAN1_SCE_IRQHandler
-                0x080019d8                FLASH_IRQHandler
-                0x080019d8                DMA2_Stream4_IRQHandler
-                0x080019d8                USART1_IRQHandler
-                0x080019d8                OTG_FS_IRQHandler
-                0x080019d8                SPI3_IRQHandler
-                0x080019d8                DMA1_Stream4_IRQHandler
-                0x080019d8                I2C1_ER_IRQHandler
-                0x080019d8                FMC_IRQHandler
-                0x080019d8                DMA2_Stream6_IRQHandler
-                0x080019d8                SAI1_IRQHandler
-                0x080019d8                DMA1_Stream3_IRQHandler
- *fill*         0x080019da        0x2 
+                0x08001c2c        0x2 CMakeFiles/sodiumBMS.dir/startup_stm32f446xx.s.obj
+                0x08001c2c                RTC_Alarm_IRQHandler
+                0x08001c2c                EXTI2_IRQHandler
+                0x08001c2c                TIM8_CC_IRQHandler
+                0x08001c2c                FMPI2C1_EV_IRQHandler
+                0x08001c2c                SPI4_IRQHandler
+                0x08001c2c                TIM1_CC_IRQHandler
+                0x08001c2c                DMA2_Stream5_IRQHandler
+                0x08001c2c                DMA1_Stream5_IRQHandler
+                0x08001c2c                PVD_IRQHandler
+                0x08001c2c                SDIO_IRQHandler
+                0x08001c2c                TAMP_STAMP_IRQHandler
+                0x08001c2c                CAN2_RX1_IRQHandler
+                0x08001c2c                EXTI3_IRQHandler
+                0x08001c2c                TIM8_TRG_COM_TIM14_IRQHandler
+                0x08001c2c                TIM1_UP_TIM10_IRQHandler
+                0x08001c2c                TIM8_UP_TIM13_IRQHandler
+                0x08001c2c                I2C3_ER_IRQHandler
+                0x08001c2c                EXTI0_IRQHandler
+                0x08001c2c                I2C2_EV_IRQHandler
+                0x08001c2c                DMA1_Stream2_IRQHandler
+                0x08001c2c                CAN1_RX0_IRQHandler
+                0x08001c2c                FPU_IRQHandler
+                0x08001c2c                OTG_HS_WKUP_IRQHandler
+                0x08001c2c                CAN2_SCE_IRQHandler
+                0x08001c2c                DMA2_Stream2_IRQHandler
+                0x08001c2c                SPI1_IRQHandler
+                0x08001c2c                TIM6_DAC_IRQHandler
+                0x08001c2c                TIM1_BRK_TIM9_IRQHandler
+                0x08001c2c                DCMI_IRQHandler
+                0x08001c2c                CAN2_RX0_IRQHandler
+                0x08001c2c                DMA2_Stream3_IRQHandler
+                0x08001c2c                SAI2_IRQHandler
+                0x08001c2c                USART6_IRQHandler
+                0x08001c2c                USART3_IRQHandler
+                0x08001c2c                CAN1_RX1_IRQHandler
+                0x08001c2c                UART5_IRQHandler
+                0x08001c2c                TIM4_IRQHandler
+                0x08001c2c                QUADSPI_IRQHandler
+                0x08001c2c                I2C1_EV_IRQHandler
+                0x08001c2c                DMA1_Stream6_IRQHandler
+                0x08001c2c                DMA1_Stream1_IRQHandler
+                0x08001c2c                UART4_IRQHandler
+                0x08001c2c                TIM3_IRQHandler
+                0x08001c2c                RCC_IRQHandler
+                0x08001c2c                TIM8_BRK_TIM12_IRQHandler
+                0x08001c2c                Default_Handler
+                0x08001c2c                CEC_IRQHandler
+                0x08001c2c                EXTI15_10_IRQHandler
+                0x08001c2c                ADC_IRQHandler
+                0x08001c2c                DMA1_Stream7_IRQHandler
+                0x08001c2c                TIM7_IRQHandler
+                0x08001c2c                CAN2_TX_IRQHandler
+                0x08001c2c                TIM5_IRQHandler
+                0x08001c2c                DMA2_Stream7_IRQHandler
+                0x08001c2c                I2C3_EV_IRQHandler
+                0x08001c2c                EXTI9_5_IRQHandler
+                0x08001c2c                RTC_WKUP_IRQHandler
+                0x08001c2c                SPDIF_RX_IRQHandler
+                0x08001c2c                SPI2_IRQHandler
+                0x08001c2c                OTG_HS_EP1_IN_IRQHandler
+                0x08001c2c                DMA1_Stream0_IRQHandler
+                0x08001c2c                CAN1_TX_IRQHandler
+                0x08001c2c                FMPI2C1_ER_IRQHandler
+                0x08001c2c                EXTI4_IRQHandler
+                0x08001c2c                OTG_HS_EP1_OUT_IRQHandler
+                0x08001c2c                WWDG_IRQHandler
+                0x08001c2c                TIM2_IRQHandler
+                0x08001c2c                OTG_FS_WKUP_IRQHandler
+                0x08001c2c                TIM1_TRG_COM_TIM11_IRQHandler
+                0x08001c2c                OTG_HS_IRQHandler
+                0x08001c2c                EXTI1_IRQHandler
+                0x08001c2c                USART2_IRQHandler
+                0x08001c2c                I2C2_ER_IRQHandler
+                0x08001c2c                DMA2_Stream1_IRQHandler
+                0x08001c2c                CAN1_SCE_IRQHandler
+                0x08001c2c                FLASH_IRQHandler
+                0x08001c2c                DMA2_Stream4_IRQHandler
+                0x08001c2c                USART1_IRQHandler
+                0x08001c2c                OTG_FS_IRQHandler
+                0x08001c2c                SPI3_IRQHandler
+                0x08001c2c                DMA1_Stream4_IRQHandler
+                0x08001c2c                I2C1_ER_IRQHandler
+                0x08001c2c                FMC_IRQHandler
+                0x08001c2c                DMA2_Stream6_IRQHandler
+                0x08001c2c                SAI1_IRQHandler
+                0x08001c2c                DMA1_Stream3_IRQHandler
+ *fill*         0x08001c2e        0x2 
  .text.SystemInit
-                0x080019dc       0x24 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
-                0x080019dc                SystemInit
+                0x08001c30       0x24 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
+                0x08001c30                SystemInit
  .text.HAL_ADC_Init
-                0x08001a00       0x86 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
-                0x08001a00                HAL_ADC_Init
- *fill*         0x08001a86        0x2 
- .text.HAL_ADC_Start
-                0x08001a88      0x1a4 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
-                0x08001a88                HAL_ADC_Start
- .text.HAL_ADC_PollForConversion
-                0x08001c2c      0x116 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
-                0x08001c2c                HAL_ADC_PollForConversion
- .text.HAL_ADC_GetValue
-                0x08001d42       0x1a cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
-                0x08001d42                HAL_ADC_GetValue
+                0x08001c54       0x86 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
+                0x08001c54                HAL_ADC_Init
+ *fill*         0x08001cda        0x2 
  .text.HAL_ADC_ConfigChannel
-                0x08001d5c      0x264 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
-                0x08001d5c                HAL_ADC_ConfigChannel
+                0x08001cdc      0x264 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
+                0x08001cdc                HAL_ADC_ConfigChannel
  .text.ADC_Init
-                0x08001fc0      0x1f8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
+                0x08001f40      0x1f8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
  .text.HAL_RCC_ClockConfig
-                0x080021b8      0x1cc cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
-                0x080021b8                HAL_RCC_ClockConfig
+                0x08002138      0x1cc cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+                0x08002138                HAL_RCC_ClockConfig
  .text.HAL_RCC_GetHCLKFreq
-                0x08002384       0x18 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
-                0x08002384                HAL_RCC_GetHCLKFreq
+                0x08002304       0x18 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+                0x08002304                HAL_RCC_GetHCLKFreq
  .text.HAL_RCC_GetPCLK1Freq
-                0x0800239c       0x28 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
-                0x0800239c                HAL_RCC_GetPCLK1Freq
+                0x0800231c       0x28 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+                0x0800231c                HAL_RCC_GetPCLK1Freq
  .text.HAL_RCC_GetPCLK2Freq
-                0x080023c4       0x28 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
-                0x080023c4                HAL_RCC_GetPCLK2Freq
+                0x08002344       0x28 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+                0x08002344                HAL_RCC_GetPCLK2Freq
  .text.HAL_RCC_GetSysClockFreq
-                0x080023ec      0x354 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj
-                0x080023ec                HAL_RCC_GetSysClockFreq
+                0x0800236c      0x354 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj
+                0x0800236c                HAL_RCC_GetSysClockFreq
  .text.HAL_RCC_OscConfig
-                0x08002740      0x53c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj
-                0x08002740                HAL_RCC_OscConfig
+                0x080026c0      0x53c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj
+                0x080026c0                HAL_RCC_OscConfig
  .text.HAL_GPIO_Init
-                0x08002c7c      0x328 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
-                0x08002c7c                HAL_GPIO_Init
+                0x08002bfc      0x328 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+                0x08002bfc                HAL_GPIO_Init
  .text.HAL_GPIO_WritePin
-                0x08002fa4       0x32 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
-                0x08002fa4                HAL_GPIO_WritePin
- *fill*         0x08002fd6        0x2 
+                0x08002f24       0x32 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+                0x08002f24                HAL_GPIO_WritePin
+ *fill*         0x08002f56        0x2 
+ .text.HAL_DMA_Init
+                0x08002f58      0x15c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+                0x08002f58                HAL_DMA_Init
+ .text.HAL_DMA_IRQHandler
+                0x080030b4      0x314 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+                0x080030b4                HAL_DMA_IRQHandler
+ .text.DMA_CalcBaseAndBitshift
+                0x080033c8       0x6c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+ .text.DMA_CheckFifoParam
+                0x08003434       0xf8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
  .text.__NVIC_SetPriorityGrouping
-                0x08002fd8       0x48 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+                0x0800352c       0x48 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
  .text.__NVIC_GetPriorityGrouping
-                0x08003020       0x1c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+                0x08003574       0x1c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .text.__NVIC_EnableIRQ
+                0x08003590       0x3c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
  .text.__NVIC_SetPriority
-                0x0800303c       0x54 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+                0x080035cc       0x54 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
  .text.NVIC_EncodePriority
-                0x08003090       0x66 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
- *fill*         0x080030f6        0x2 
+                0x08003620       0x66 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ *fill*         0x08003686        0x2 
  .text.SysTick_Config
-                0x080030f8       0x44 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+                0x08003688       0x44 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
  .text.HAL_NVIC_SetPriorityGrouping
-                0x0800313c       0x16 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
-                0x0800313c                HAL_NVIC_SetPriorityGrouping
+                0x080036cc       0x16 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+                0x080036cc                HAL_NVIC_SetPriorityGrouping
  .text.HAL_NVIC_SetPriority
-                0x08003152       0x38 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
-                0x08003152                HAL_NVIC_SetPriority
+                0x080036e2       0x38 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+                0x080036e2                HAL_NVIC_SetPriority
+ .text.HAL_NVIC_EnableIRQ
+                0x0800371a       0x1c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+                0x0800371a                HAL_NVIC_EnableIRQ
  .text.HAL_SYSTICK_Config
-                0x0800318a       0x18 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
-                0x0800318a                HAL_SYSTICK_Config
- *fill*         0x080031a2        0x2 
+                0x08003736       0x18 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+                0x08003736                HAL_SYSTICK_Config
+ *fill*         0x0800374e        0x2 
  .text.HAL_Init
-                0x080031a4       0x44 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
-                0x080031a4                HAL_Init
+                0x08003750       0x44 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+                0x08003750                HAL_Init
  .text.HAL_InitTick
-                0x080031e8       0x60 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
-                0x080031e8                HAL_InitTick
+                0x08003794       0x60 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+                0x08003794                HAL_InitTick
  .text.HAL_IncTick
-                0x08003248       0x28 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
-                0x08003248                HAL_IncTick
+                0x080037f4       0x28 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+                0x080037f4                HAL_IncTick
  .text.HAL_GetTick
-                0x08003270       0x18 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
-                0x08003270                HAL_GetTick
+                0x0800381c       0x18 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+                0x0800381c                HAL_GetTick
  .text.HAL_Delay
-                0x08003288       0x48 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
-                0x08003288                HAL_Delay
+                0x08003834       0x48 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+                0x08003834                HAL_Delay
  .text.HAL_UART_Init
-                0x080032d0       0xa0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
-                0x080032d0                HAL_UART_Init
+                0x0800387c       0xa0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x0800387c                HAL_UART_Init
  .text.HAL_UART_Transmit
-                0x08003370      0x116 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
-                0x08003370                HAL_UART_Transmit
+                0x0800391c      0x116 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x0800391c                HAL_UART_Transmit
  .text.UART_WaitOnFlagUntilTimeout
-                0x08003486       0xb2 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x08003a32       0xb2 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
  .text.UART_EndRxTransfer
-                0x08003538       0xc6 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
- *fill*         0x080035fe        0x2 
+                0x08003ae4       0xc6 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+ *fill*         0x08003baa        0x2 
  .text.UART_SetConfig
-                0x08003600      0x4e8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x08003bac      0x4e8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
  *(.glue_7)
- .glue_7        0x08003ae8        0x0 linker stubs
+ .glue_7        0x08004094        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x08003ae8        0x0 linker stubs
+ .glue_7t       0x08004094        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x08003ae8        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .eh_frame      0x08004094        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/crtbegin.o
  *(.init)
- .init          0x08003ae8        0x4 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/crti.o
-                0x08003ae8                _init
- .init          0x08003aec        0x8 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/crtn.o
+ .init          0x08004094        0x4 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/crti.o
+                0x08004094                _init
+ .init          0x08004098        0x8 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/crtn.o
  *(.fini)
- .fini          0x08003af4        0x4 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/crti.o
-                0x08003af4                _fini
- .fini          0x08003af8        0x8 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/crtn.o
-                0x08003b00                        . = ALIGN (0x4)
-                0x08003b00                        _etext = .
+ .fini          0x080040a0        0x4 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/crti.o
+                0x080040a0                _fini
+ .fini          0x080040a4        0x8 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/crtn.o
+                0x080040ac                        . = ALIGN (0x4)
+                0x080040ac                        _etext = .
 
-.vfp11_veneer   0x08003b00        0x0
- .vfp11_veneer  0x08003b00        0x0 linker stubs
+.vfp11_veneer   0x080040ac        0x0
+ .vfp11_veneer  0x080040ac        0x0 linker stubs
 
-.v4_bx          0x08003b00        0x0
- .v4_bx         0x08003b00        0x0 linker stubs
+.v4_bx          0x080040ac        0x0
+ .v4_bx         0x080040ac        0x0 linker stubs
 
-.iplt           0x08003b00        0x0
- .iplt          0x08003b00        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+.iplt           0x080040ac        0x0
+ .iplt          0x080040ac        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.rodata         0x08003b00       0x64
-                0x08003b00                        . = ALIGN (0x4)
+.rodata         0x080040ac       0xac
+                0x080040ac                        . = ALIGN (0x4)
  *(.rodata)
- .rodata        0x08003b00       0x10 CMakeFiles/sodiumBMS.dir/Core/Src/main.c.obj
+ .rodata        0x080040ac       0x4d CMakeFiles/sodiumBMS.dir/Core/Src/main.c.obj
  *(.rodata*)
+ *fill*         0x080040f9        0x3 
  .rodata.AHBPrescTable
-                0x08003b10       0x10 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
-                0x08003b10                AHBPrescTable
+                0x080040fc       0x10 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
+                0x080040fc                AHBPrescTable
  .rodata.APBPrescTable
-                0x08003b20        0x8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
-                0x08003b20                APBPrescTable
+                0x0800410c        0x8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
+                0x0800410c                APBPrescTable
+ .rodata.flagBitshiftOffset.0
+                0x08004114        0x8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
  .rodata.str1.4
-                0x08003b28       0x13 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-svfprintf.o)
- *fill*         0x08003b3b        0x1 
+                0x0800411c       0x13 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-svfprintf.o)
+ *fill*         0x0800412f        0x1 
  .rodata.str1.4
-                0x08003b3c       0x25 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-vfprintf_i.o)
-                0x08003b64                        . = ALIGN (0x4)
- *fill*         0x08003b61        0x3 
+                0x08004130       0x25 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-vfprintf_i.o)
+                0x08004158                        . = ALIGN (0x4)
+ *fill*         0x08004155        0x3 
 
-.ARM.extab      0x08003b64        0x0
-                0x08003b64                        . = ALIGN (0x4)
+.ARM.extab      0x08004158        0x0
+                0x08004158                        . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x08003b64                        . = ALIGN (0x4)
+                0x08004158                        . = ALIGN (0x4)
 
-.ARM            0x08003b64        0x8
-                0x08003b64                        . = ALIGN (0x4)
-                0x08003b64                        __exidx_start = .
+.ARM            0x08004158        0x8
+                0x08004158                        . = ALIGN (0x4)
+                0x08004158                        __exidx_start = .
  *(.ARM.exidx*)
- .ARM.exidx     0x08003b64        0x8 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
-                0x08003b6c                        __exidx_end = .
-                0x08003b6c                        . = ALIGN (0x4)
+ .ARM.exidx     0x08004158        0x8 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+                0x08004160                        __exidx_end = .
+                0x08004160                        . = ALIGN (0x4)
 
-.preinit_array  0x08003b6c        0x0
-                0x08003b6c                        . = ALIGN (0x4)
-                0x08003b6c                        PROVIDE (__preinit_array_start = .)
+.preinit_array  0x08004160        0x0
+                0x08004160                        . = ALIGN (0x4)
+                0x08004160                        PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x08003b6c                        PROVIDE (__preinit_array_end = .)
-                0x08003b6c                        . = ALIGN (0x4)
+                0x08004160                        PROVIDE (__preinit_array_end = .)
+                0x08004160                        . = ALIGN (0x4)
 
-.init_array     0x08003b6c        0x4
-                0x08003b6c                        . = ALIGN (0x4)
-                0x08003b6c                        PROVIDE (__init_array_start = .)
+.init_array     0x08004160        0x4
+                0x08004160                        . = ALIGN (0x4)
+                0x08004160                        PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x08003b6c        0x4 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/crtbegin.o
-                0x08003b70                        PROVIDE (__init_array_end = .)
-                0x08003b70                        . = ALIGN (0x4)
+ .init_array    0x08004160        0x4 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+                0x08004164                        PROVIDE (__init_array_end = .)
+                0x08004164                        . = ALIGN (0x4)
 
-.fini_array     0x08003b70        0x4
-                0x08003b70                        . = ALIGN (0x4)
-                0x08003b70                        PROVIDE (__fini_array_start = .)
+.fini_array     0x08004164        0x4
+                0x08004164                        . = ALIGN (0x4)
+                0x08004164                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x08003b70        0x4 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/crtbegin.o
-                0x08003b74                        PROVIDE (__fini_array_end = .)
-                0x08003b74                        . = ALIGN (0x4)
-                0x08003b74                        _sidata = LOADADDR (.data)
+ .fini_array    0x08004164        0x4 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+                0x08004168                        PROVIDE (__fini_array_end = .)
+                0x08004168                        . = ALIGN (0x4)
+                0x08004168                        _sidata = LOADADDR (.data)
 
-.rel.dyn        0x08003b74        0x0
- .rel.iplt      0x08003b74        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+.rel.dyn        0x08004168        0x0
+ .rel.iplt      0x08004168        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.data           0x20000000       0x70 load address 0x08003b74
+.data           0x20000000       0xb0 load address 0x08004168
                 0x20000000                        . = ALIGN (0x4)
                 0x20000000                        _sdata = .
  *(.data)
  .data          0x20000000       0x64 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-impure.o)
                 0x20000000                _impure_ptr
  *(.data*)
+ .data.msg      0x20000064       0x40 CMakeFiles/sodiumBMS.dir/Core/Src/main.c.obj
+                0x20000064                msg
  .data.SystemCoreClock
-                0x20000064        0x4 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
-                0x20000064                SystemCoreClock
+                0x200000a4        0x4 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
+                0x200000a4                SystemCoreClock
  .data.uwTickPrio
-                0x20000068        0x4 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
-                0x20000068                uwTickPrio
+                0x200000a8        0x4 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+                0x200000a8                uwTickPrio
  .data.uwTickFreq
-                0x2000006c        0x1 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
-                0x2000006c                uwTickFreq
+                0x200000ac        0x1 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+                0x200000ac                uwTickFreq
  *(.RamFunc)
  *(.RamFunc*)
-                0x20000070                        . = ALIGN (0x4)
- *fill*         0x2000006d        0x3 
+                0x200000b0                        . = ALIGN (0x4)
+ *fill*         0x200000ad        0x3 
 
 .tm_clone_table
-                0x20000070        0x0 load address 0x08003be4
+                0x200000b0        0x0 load address 0x08004218
  .tm_clone_table
-                0x20000070        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+                0x200000b0        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/crtbegin.o
  .tm_clone_table
-                0x20000070        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/crtend.o
+                0x200000b0        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/crtend.o
 
-.igot.plt       0x20000070        0x0 load address 0x08003be4
- .igot.plt      0x20000070        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+.igot.plt       0x200000b0        0x0 load address 0x08004218
+ .igot.plt      0x200000b0        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.tdata          0x20000070        0x0 load address 0x08003be4
+.tdata          0x200000b0        0x0 load address 0x08004218
  *(.tdata .tdata.* .gnu.linkonce.td.*)
-                0x20000070                        . = ALIGN (0x4)
-                0x20000070                        _edata = .
+                0x200000b0                        . = ALIGN (0x4)
+                0x200000b0                        _edata = .
                 [!provide]                        PROVIDE (__data_end = .)
                 [!provide]                        PROVIDE (__tdata_end = .)
                 [!provide]                        PROVIDE (__tdata_start = ADDR (.tdata))
@@ -3006,11 +3011,11 @@ LOAD /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/crtn.o
                 [!provide]                        PROVIDE (__data_source_end = __tdata_source_end)
                 [!provide]                        PROVIDE (__data_source_size = (__data_source_end - __data_source))
 
-.tbss           0x20000070        0x0 load address 0x08003be4
-                0x20000070                        _sbss = .
-                0x20000070                        __bss_start__ = _sbss
+.tbss           0x200000b0        0x0 load address 0x08004218
+                0x200000b0                        _sbss = .
+                0x200000b0                        __bss_start__ = _sbss
  *(.tbss .tbss.*)
-                0x20000070                        . = ALIGN (0x4)
+                0x200000b0                        . = ALIGN (0x4)
                 [!provide]                        PROVIDE (__tbss_end = .)
                 [!provide]                        PROVIDE (__tbss_start = ADDR (.tbss))
                 [!provide]                        PROVIDE (__tbss_size = (__tbss_end - __tbss_start))
@@ -3023,47 +3028,57 @@ LOAD /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/crtn.o
                 [!provide]                        PROVIDE (__arm32_tls_tcb_offset = MAX (0x8, __tls_align))
                 [!provide]                        PROVIDE (__arm64_tls_tcb_offset = MAX (0x10, __tls_align))
 
-.bss            0x20000070       0xd8 load address 0x08003be4
+.bss            0x200000b0      0x170 load address 0x08004218
  *(.bss)
- .bss           0x20000070       0x1c /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/crtbegin.o
- .bss           0x2000008c        0x8 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-mallocr.o)
-                0x2000008c                __malloc_free_list
-                0x20000090                __malloc_sbrk_start
- .bss           0x20000094        0x4 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-reent.o)
-                0x20000094                errno
+ .bss           0x200000b0       0x1c /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .bss           0x200000cc        0x8 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-mallocr.o)
+                0x200000cc                __malloc_free_list
+                0x200000d0                __malloc_sbrk_start
+ .bss           0x200000d4        0x4 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-reent.o)
+                0x200000d4                errno
  *(.bss*)
- .bss.hadc1     0x20000098       0x48 CMakeFiles/sodiumBMS.dir/Core/Src/main.c.obj
-                0x20000098                hadc1
- .bss.huart2    0x200000e0       0x48 CMakeFiles/sodiumBMS.dir/Core/Src/main.c.obj
-                0x200000e0                huart2
- .bss.volts     0x20000128        0x2 CMakeFiles/sodiumBMS.dir/Core/Src/main.c.obj
-                0x20000128                volts
- *fill*         0x2000012a        0x2 
- .bss.msg       0x2000012c       0x14 CMakeFiles/sodiumBMS.dir/Core/Src/main.c.obj
-                0x2000012c                msg
+ .bss.hadc1     0x200000d8       0x48 CMakeFiles/sodiumBMS.dir/Core/Src/main.c.obj
+                0x200000d8                hadc1
+ .bss.hadc2     0x20000120       0x48 CMakeFiles/sodiumBMS.dir/Core/Src/main.c.obj
+                0x20000120                hadc2
+ .bss.hdma_adc1
+                0x20000168       0x60 CMakeFiles/sodiumBMS.dir/Core/Src/main.c.obj
+                0x20000168                hdma_adc1
+ .bss.huart2    0x200001c8       0x48 CMakeFiles/sodiumBMS.dir/Core/Src/main.c.obj
+                0x200001c8                huart2
+ .bss.cell1_voltage
+                0x20000210        0x2 CMakeFiles/sodiumBMS.dir/Core/Src/main.c.obj
+                0x20000210                cell1_voltage
+ .bss.cell2_voltage
+                0x20000212        0x2 CMakeFiles/sodiumBMS.dir/Core/Src/main.c.obj
+                0x20000212                cell2_voltage
+ .bss.cell3_voltage
+                0x20000214        0x2 CMakeFiles/sodiumBMS.dir/Core/Src/main.c.obj
+                0x20000214                cell3_voltage
+ *fill*         0x20000216        0x2 
  .bss.__sbrk_heap_end
-                0x20000140        0x4 CMakeFiles/sodiumBMS.dir/Core/Src/sysmem.c.obj
- .bss.uwTick    0x20000144        0x4 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
-                0x20000144                uwTick
+                0x20000218        0x4 CMakeFiles/sodiumBMS.dir/Core/Src/sysmem.c.obj
+ .bss.uwTick    0x2000021c        0x4 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+                0x2000021c                uwTick
  *(COMMON)
-                0x20000148                        . = ALIGN (0x4)
-                0x20000148                        _ebss = .
-                0x20000148                        __bss_end__ = _ebss
+                0x20000220                        . = ALIGN (0x4)
+                0x20000220                        _ebss = .
+                0x20000220                        __bss_end__ = _ebss
                 [!provide]                        PROVIDE (__bss_end = .)
                 [!provide]                        PROVIDE (__non_tls_bss_start = ADDR (.bss))
                 [!provide]                        PROVIDE (__bss_start = __tbss_start)
                 [!provide]                        PROVIDE (__bss_size = (__bss_end - __bss_start))
 
 ._user_heap_stack
-                0x20000148      0x600 load address 0x08003be4
-                0x20000148                        . = ALIGN (0x8)
+                0x20000220      0x600 load address 0x08004218
+                0x20000220                        . = ALIGN (0x8)
                 [!provide]                        PROVIDE (end = .)
-                0x20000148                        PROVIDE (_end = .)
-                0x20000348                        . = (. + _Min_Heap_Size)
- *fill*         0x20000148      0x200 
-                0x20000748                        . = (. + _Min_Stack_Size)
- *fill*         0x20000348      0x400 
-                0x20000748                        . = ALIGN (0x8)
+                0x20000220                        PROVIDE (_end = .)
+                0x20000420                        . = (. + _Min_Heap_Size)
+ *fill*         0x20000220      0x200 
+                0x20000820                        . = (. + _Min_Stack_Size)
+ *fill*         0x20000420      0x400 
+                0x20000820                        . = ALIGN (0x8)
 
 /DISCARD/
  libc.a:*(*)
@@ -3099,57 +3114,59 @@ LOAD linker stubs
  .ARM.attributes
                 0x00000217       0x34 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
  .ARM.attributes
-                0x0000024b       0x34 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+                0x0000024b       0x34 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
  .ARM.attributes
-                0x0000027f       0x34 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+                0x0000027f       0x34 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
  .ARM.attributes
-                0x000002b3       0x34 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x000002b3       0x34 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
  .ARM.attributes
-                0x000002e7       0x22 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
+                0x000002e7       0x34 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
  .ARM.attributes
-                0x00000309       0x34 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+                0x0000031b       0x22 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
  .ARM.attributes
-                0x0000033d       0x22 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_dvmd_tls.o)
+                0x0000033d       0x34 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
  .ARM.attributes
-                0x0000035f       0x34 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-errno.o)
+                0x00000371       0x22 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_dvmd_tls.o)
  .ARM.attributes
-                0x00000393       0x34 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-impure.o)
+                0x00000393       0x34 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-errno.o)
  .ARM.attributes
-                0x000003c7       0x34 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-init.o)
+                0x000003c7       0x34 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-impure.o)
  .ARM.attributes
-                0x000003fb       0x34 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memset.o)
+                0x000003fb       0x34 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-init.o)
  .ARM.attributes
-                0x0000042f       0x34 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-sprintf.o)
+                0x0000042f       0x34 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memset.o)
  .ARM.attributes
-                0x00000463       0x1c /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-strlen.o)
+                0x00000463       0x34 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-sprintf.o)
  .ARM.attributes
-                0x0000047f       0x34 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-svfprintf.o)
+                0x00000497       0x1c /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-strlen.o)
  .ARM.attributes
-                0x000004b3       0x34 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-vfprintf_i.o)
+                0x000004b3       0x34 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-svfprintf.o)
  .ARM.attributes
-                0x000004e7       0x1c /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memchr.o)
+                0x000004e7       0x34 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-vfprintf_i.o)
  .ARM.attributes
-                0x00000503       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memcpy.o)
+                0x0000051b       0x1c /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memchr.o)
  .ARM.attributes
-                0x00000523       0x34 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memmove.o)
+                0x00000537       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memcpy.o)
  .ARM.attributes
-                0x00000557       0x34 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-freer.o)
+                0x00000557       0x34 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memmove.o)
  .ARM.attributes
-                0x0000058b       0x34 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-mallocr.o)
+                0x0000058b       0x34 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-freer.o)
  .ARM.attributes
-                0x000005bf       0x34 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-reallocr.o)
+                0x000005bf       0x34 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-mallocr.o)
  .ARM.attributes
-                0x000005f3       0x34 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-sbrkr.o)
+                0x000005f3       0x34 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-reallocr.o)
  .ARM.attributes
-                0x00000627       0x34 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-mlock.o)
+                0x00000627       0x34 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-sbrkr.o)
  .ARM.attributes
-                0x0000065b       0x34 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-msizer.o)
+                0x0000065b       0x34 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-mlock.o)
  .ARM.attributes
-                0x0000068f       0x34 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-reent.o)
+                0x0000068f       0x34 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-msizer.o)
  .ARM.attributes
-                0x000006c3       0x34 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/crtend.o
+                0x000006c3       0x34 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-reent.o)
  .ARM.attributes
-                0x000006f7       0x22 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/crtn.o
+                0x000006f7       0x34 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/crtend.o
+ .ARM.attributes
+                0x0000072b       0x22 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/crtn.o
 
 .comment        0x00000000       0x26
  .comment       0x00000000       0x26 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/crtbegin.o
@@ -3163,6 +3180,7 @@ LOAD linker stubs
  .comment       0x00000026       0x27 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
  .comment       0x00000026       0x27 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj
  .comment       0x00000026       0x27 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+ .comment       0x00000026       0x27 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
  .comment       0x00000026       0x27 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
  .comment       0x00000026       0x27 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
  .comment       0x00000026       0x27 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
@@ -3184,188 +3202,194 @@ LOAD linker stubs
  .comment       0x00000026       0x27 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-reent.o)
  .comment       0x00000026       0x27 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/crtend.o
 
-.debug_info     0x00000000    0x10ec6
- .debug_info    0x00000000      0xfa1 CMakeFiles/sodiumBMS.dir/Core/Src/main.c.obj
- .debug_info    0x00000fa1      0x112 CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_it.c.obj
- .debug_info    0x000010b3      0xbe3 CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_hal_msp.c.obj
- .debug_info    0x00001c96      0x150 CMakeFiles/sodiumBMS.dir/Core/Src/sysmem.c.obj
- .debug_info    0x00001de6       0x30 CMakeFiles/sodiumBMS.dir/startup_stm32f446xx.s.obj
- .debug_info    0x00001e16      0x530 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
- .debug_info    0x00002346      0xcbf cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
- .debug_info    0x00003005      0x8cf cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
- .debug_info    0x000038d4      0x93c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj
- .debug_info    0x00004210      0x6e7 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
- .debug_info    0x000048f7      0xd86 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
- .debug_info    0x0000567d      0x98e cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
- .debug_info    0x0000600b     0x2f1f cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
- .debug_info    0x00008f2a       0x24 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
- .debug_info    0x00008f4e      0x6ef /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
- .debug_info    0x0000963d       0x39 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_dvmd_tls.o)
- .debug_info    0x00009676      0x751 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-errno.o)
- .debug_info    0x00009dc7      0x7fc /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-impure.o)
- .debug_info    0x0000a5c3      0x10b /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-init.o)
- .debug_info    0x0000a6ce      0x135 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memset.o)
- .debug_info    0x0000a803      0x8d5 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-sprintf.o)
- .debug_info    0x0000b0d8       0x33 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-strlen.o)
- .debug_info    0x0000b10b     0x10f8 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-svfprintf.o)
- .debug_info    0x0000c203      0xe37 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-vfprintf_i.o)
- .debug_info    0x0000d03a       0x25 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memchr.o)
- .debug_info    0x0000d05f       0x33 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memcpy.o)
- .debug_info    0x0000d092      0x148 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memmove.o)
- .debug_info    0x0000d1da      0x8cd /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-freer.o)
- .debug_info    0x0000daa7      0x9cd /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-mallocr.o)
- .debug_info    0x0000e474      0x8fe /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-reallocr.o)
- .debug_info    0x0000ed72      0x7d2 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-sbrkr.o)
- .debug_info    0x0000f544      0x77c /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-mlock.o)
- .debug_info    0x0000fcc0      0x7ea /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-msizer.o)
- .debug_info    0x000104aa      0xa1c /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-reent.o)
+.debug_info     0x00000000    0x11e54
+ .debug_info    0x00000000     0x132f CMakeFiles/sodiumBMS.dir/Core/Src/main.c.obj
+ .debug_info    0x0000132f      0x39d CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_it.c.obj
+ .debug_info    0x000016cc      0xc89 CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_info    0x00002355      0x150 CMakeFiles/sodiumBMS.dir/Core/Src/sysmem.c.obj
+ .debug_info    0x000024a5       0x30 CMakeFiles/sodiumBMS.dir/startup_stm32f446xx.s.obj
+ .debug_info    0x000024d5      0x530 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
+ .debug_info    0x00002a05      0xcbf cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
+ .debug_info    0x000036c4      0x8cf cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+ .debug_info    0x00003f93      0x93c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj
+ .debug_info    0x000048cf      0x6e7 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+ .debug_info    0x00004fb6      0x8cf cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+ .debug_info    0x00005885      0xd86 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .debug_info    0x0000660b      0x98e cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .debug_info    0x00006f99     0x2f1f cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+ .debug_info    0x00009eb8       0x24 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
+ .debug_info    0x00009edc      0x6ef /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+ .debug_info    0x0000a5cb       0x39 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_dvmd_tls.o)
+ .debug_info    0x0000a604      0x751 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-errno.o)
+ .debug_info    0x0000ad55      0x7fc /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-impure.o)
+ .debug_info    0x0000b551      0x10b /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-init.o)
+ .debug_info    0x0000b65c      0x135 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memset.o)
+ .debug_info    0x0000b791      0x8d5 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-sprintf.o)
+ .debug_info    0x0000c066       0x33 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-strlen.o)
+ .debug_info    0x0000c099     0x10f8 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-svfprintf.o)
+ .debug_info    0x0000d191      0xe37 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-vfprintf_i.o)
+ .debug_info    0x0000dfc8       0x25 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memchr.o)
+ .debug_info    0x0000dfed       0x33 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memcpy.o)
+ .debug_info    0x0000e020      0x148 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memmove.o)
+ .debug_info    0x0000e168      0x8cd /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-freer.o)
+ .debug_info    0x0000ea35      0x9cd /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-mallocr.o)
+ .debug_info    0x0000f402      0x8fe /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-reallocr.o)
+ .debug_info    0x0000fd00      0x7d2 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-sbrkr.o)
+ .debug_info    0x000104d2      0x77c /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-mlock.o)
+ .debug_info    0x00010c4e      0x7ea /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-msizer.o)
+ .debug_info    0x00011438      0xa1c /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-reent.o)
 
-.debug_abbrev   0x00000000     0x34dd
- .debug_abbrev  0x00000000      0x289 CMakeFiles/sodiumBMS.dir/Core/Src/main.c.obj
- .debug_abbrev  0x00000289       0x73 CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_it.c.obj
- .debug_abbrev  0x000002fc      0x1ad CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_hal_msp.c.obj
- .debug_abbrev  0x000004a9       0xbc CMakeFiles/sodiumBMS.dir/Core/Src/sysmem.c.obj
- .debug_abbrev  0x00000565       0x24 CMakeFiles/sodiumBMS.dir/startup_stm32f446xx.s.obj
- .debug_abbrev  0x00000589      0x11b cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
- .debug_abbrev  0x000006a4      0x252 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
- .debug_abbrev  0x000008f6      0x2b7 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
- .debug_abbrev  0x00000bad      0x211 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj
- .debug_abbrev  0x00000dbe      0x1d4 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
- .debug_abbrev  0x00000f92      0x31d cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
- .debug_abbrev  0x000012af      0x214 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
- .debug_abbrev  0x000014c3      0x30e cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
- .debug_abbrev  0x000017d1       0x14 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
- .debug_abbrev  0x000017e5      0x16a /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
- .debug_abbrev  0x0000194f       0x1f /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_dvmd_tls.o)
- .debug_abbrev  0x0000196e      0x15e /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-errno.o)
- .debug_abbrev  0x00001acc      0x15a /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-impure.o)
- .debug_abbrev  0x00001c26       0xc9 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-init.o)
- .debug_abbrev  0x00001cef       0xb7 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memset.o)
- .debug_abbrev  0x00001da6      0x21c /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-sprintf.o)
- .debug_abbrev  0x00001fc2       0x28 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-strlen.o)
- .debug_abbrev  0x00001fea      0x31e /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-svfprintf.o)
- .debug_abbrev  0x00002308      0x284 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-vfprintf_i.o)
- .debug_abbrev  0x0000258c       0x14 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memchr.o)
- .debug_abbrev  0x000025a0       0x28 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memcpy.o)
- .debug_abbrev  0x000025c8       0xc3 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memmove.o)
- .debug_abbrev  0x0000268b      0x249 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-freer.o)
- .debug_abbrev  0x000028d4      0x2aa /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-mallocr.o)
- .debug_abbrev  0x00002b7e      0x1f8 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-reallocr.o)
- .debug_abbrev  0x00002d76      0x1da /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-sbrkr.o)
- .debug_abbrev  0x00002f50      0x192 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-mlock.o)
- .debug_abbrev  0x000030e2      0x196 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-msizer.o)
- .debug_abbrev  0x00003278      0x265 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-reent.o)
+.debug_abbrev   0x00000000     0x38de
+ .debug_abbrev  0x00000000      0x2f1 CMakeFiles/sodiumBMS.dir/Core/Src/main.c.obj
+ .debug_abbrev  0x000002f1      0x169 CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_it.c.obj
+ .debug_abbrev  0x0000045a      0x1ec CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_abbrev  0x00000646       0xbc CMakeFiles/sodiumBMS.dir/Core/Src/sysmem.c.obj
+ .debug_abbrev  0x00000702       0x24 CMakeFiles/sodiumBMS.dir/startup_stm32f446xx.s.obj
+ .debug_abbrev  0x00000726      0x11b cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
+ .debug_abbrev  0x00000841      0x252 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
+ .debug_abbrev  0x00000a93      0x2b7 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+ .debug_abbrev  0x00000d4a      0x211 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj
+ .debug_abbrev  0x00000f5b      0x1d4 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+ .debug_abbrev  0x0000112f      0x264 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+ .debug_abbrev  0x00001393      0x31d cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .debug_abbrev  0x000016b0      0x214 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .debug_abbrev  0x000018c4      0x30e cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+ .debug_abbrev  0x00001bd2       0x14 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
+ .debug_abbrev  0x00001be6      0x16a /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+ .debug_abbrev  0x00001d50       0x1f /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_dvmd_tls.o)
+ .debug_abbrev  0x00001d6f      0x15e /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-errno.o)
+ .debug_abbrev  0x00001ecd      0x15a /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-impure.o)
+ .debug_abbrev  0x00002027       0xc9 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-init.o)
+ .debug_abbrev  0x000020f0       0xb7 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memset.o)
+ .debug_abbrev  0x000021a7      0x21c /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-sprintf.o)
+ .debug_abbrev  0x000023c3       0x28 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-strlen.o)
+ .debug_abbrev  0x000023eb      0x31e /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-svfprintf.o)
+ .debug_abbrev  0x00002709      0x284 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-vfprintf_i.o)
+ .debug_abbrev  0x0000298d       0x14 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memchr.o)
+ .debug_abbrev  0x000029a1       0x28 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memcpy.o)
+ .debug_abbrev  0x000029c9       0xc3 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memmove.o)
+ .debug_abbrev  0x00002a8c      0x249 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-freer.o)
+ .debug_abbrev  0x00002cd5      0x2aa /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-mallocr.o)
+ .debug_abbrev  0x00002f7f      0x1f8 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-reallocr.o)
+ .debug_abbrev  0x00003177      0x1da /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-sbrkr.o)
+ .debug_abbrev  0x00003351      0x192 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-mlock.o)
+ .debug_abbrev  0x000034e3      0x196 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-msizer.o)
+ .debug_abbrev  0x00003679      0x265 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-reent.o)
 
-.debug_aranges  0x00000000      0xa58
+.debug_aranges  0x00000000      0xb08
  .debug_aranges
-                0x00000000       0x48 CMakeFiles/sodiumBMS.dir/Core/Src/main.c.obj
+                0x00000000       0x60 CMakeFiles/sodiumBMS.dir/Core/Src/main.c.obj
  .debug_aranges
-                0x00000048       0x60 CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_it.c.obj
+                0x00000060       0x68 CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_it.c.obj
  .debug_aranges
-                0x000000a8       0x40 CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+                0x000000c8       0x40 CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_hal_msp.c.obj
  .debug_aranges
-                0x000000e8       0x20 CMakeFiles/sodiumBMS.dir/Core/Src/sysmem.c.obj
+                0x00000108       0x20 CMakeFiles/sodiumBMS.dir/Core/Src/sysmem.c.obj
  .debug_aranges
-                0x00000108       0x28 CMakeFiles/sodiumBMS.dir/startup_stm32f446xx.s.obj
+                0x00000128       0x28 CMakeFiles/sodiumBMS.dir/startup_stm32f446xx.s.obj
  .debug_aranges
-                0x00000130       0x28 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
+                0x00000150       0x28 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
  .debug_aranges
-                0x00000158       0xe8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
+                0x00000178       0xe8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
  .debug_aranges
-                0x00000240       0x88 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+                0x00000260       0x88 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
  .debug_aranges
-                0x000002c8       0x78 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj
+                0x000002e8       0x78 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj
  .debug_aranges
-                0x00000340       0x58 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+                0x00000360       0x58 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
  .debug_aranges
-                0x00000398      0x130 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+                0x000003b8       0x90 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
  .debug_aranges
-                0x000004c8       0xf0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+                0x00000448      0x130 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
  .debug_aranges
-                0x000005b8      0x208 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x00000578       0xf0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
  .debug_aranges
-                0x000007c0       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
+                0x00000668      0x208 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
  .debug_aranges
-                0x000007e0       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+                0x00000870       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
  .debug_aranges
-                0x00000800       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_dvmd_tls.o)
+                0x00000890       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
  .debug_aranges
-                0x00000820       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-errno.o)
+                0x000008b0       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_dvmd_tls.o)
  .debug_aranges
-                0x00000840       0x18 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-impure.o)
+                0x000008d0       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-errno.o)
  .debug_aranges
-                0x00000858       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-init.o)
+                0x000008f0       0x18 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-impure.o)
  .debug_aranges
-                0x00000878       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memset.o)
+                0x00000908       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-init.o)
  .debug_aranges
-                0x00000898       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-sprintf.o)
+                0x00000928       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memset.o)
  .debug_aranges
-                0x000008b8       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-strlen.o)
+                0x00000948       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-sprintf.o)
  .debug_aranges
-                0x000008d8       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-svfprintf.o)
+                0x00000968       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-strlen.o)
  .debug_aranges
-                0x000008f8       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-vfprintf_i.o)
+                0x00000988       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-svfprintf.o)
  .debug_aranges
-                0x00000918       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memchr.o)
+                0x000009a8       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-vfprintf_i.o)
  .debug_aranges
-                0x00000938       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memcpy.o)
+                0x000009c8       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memchr.o)
  .debug_aranges
-                0x00000958       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memmove.o)
+                0x000009e8       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memcpy.o)
  .debug_aranges
-                0x00000978       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-freer.o)
+                0x00000a08       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memmove.o)
  .debug_aranges
-                0x00000998       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-mallocr.o)
+                0x00000a28       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-freer.o)
  .debug_aranges
-                0x000009b8       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-reallocr.o)
+                0x00000a48       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-mallocr.o)
  .debug_aranges
-                0x000009d8       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-sbrkr.o)
+                0x00000a68       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-reallocr.o)
  .debug_aranges
-                0x000009f8       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-mlock.o)
+                0x00000a88       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-sbrkr.o)
  .debug_aranges
-                0x00000a18       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-msizer.o)
+                0x00000aa8       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-mlock.o)
  .debug_aranges
-                0x00000a38       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-reent.o)
+                0x00000ac8       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-msizer.o)
+ .debug_aranges
+                0x00000ae8       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-reent.o)
 
 .debug_rnglists
-                0x00000000      0x752
+                0x00000000      0x7dc
  .debug_rnglists
-                0x00000000       0x34 CMakeFiles/sodiumBMS.dir/Core/Src/main.c.obj
+                0x00000000       0x48 CMakeFiles/sodiumBMS.dir/Core/Src/main.c.obj
  .debug_rnglists
-                0x00000034       0x43 CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_it.c.obj
+                0x00000048       0x49 CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_it.c.obj
  .debug_rnglists
-                0x00000077       0x2d CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+                0x00000091       0x2d CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_hal_msp.c.obj
  .debug_rnglists
-                0x000000a4       0x13 CMakeFiles/sodiumBMS.dir/Core/Src/sysmem.c.obj
+                0x000000be       0x13 CMakeFiles/sodiumBMS.dir/Core/Src/sysmem.c.obj
  .debug_rnglists
-                0x000000b7       0x19 CMakeFiles/sodiumBMS.dir/startup_stm32f446xx.s.obj
+                0x000000d1       0x19 CMakeFiles/sodiumBMS.dir/startup_stm32f446xx.s.obj
  .debug_rnglists
-                0x000000d0       0x1a cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
+                0x000000ea       0x1a cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
  .debug_rnglists
-                0x000000ea       0xb5 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
+                0x00000104       0xb5 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
  .debug_rnglists
-                0x0000019f       0x66 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+                0x000001b9       0x66 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
  .debug_rnglists
-                0x00000205       0x5e cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj
+                0x0000021f       0x5e cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj
  .debug_rnglists
-                0x00000263       0x3f cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+                0x0000027d       0x3f cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
  .debug_rnglists
-                0x000002a2       0xe0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+                0x000002bc       0x70 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
  .debug_rnglists
-                0x00000382       0xaf cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+                0x0000032c       0xe0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
  .debug_rnglists
-                0x00000431      0x1bc cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x0000040c       0xaf cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
  .debug_rnglists
-                0x000005ed       0x89 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+                0x000004bb      0x1bc cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
  .debug_rnglists
-                0x00000676       0x42 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-svfprintf.o)
+                0x00000677       0x89 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
  .debug_rnglists
-                0x000006b8       0x61 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-vfprintf_i.o)
+                0x00000700       0x42 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-svfprintf.o)
  .debug_rnglists
-                0x00000719       0x13 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-freer.o)
+                0x00000742       0x61 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-vfprintf_i.o)
  .debug_rnglists
-                0x0000072c       0x26 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-mallocr.o)
+                0x000007a3       0x13 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-freer.o)
+ .debug_rnglists
+                0x000007b6       0x26 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-mallocr.o)
 
-.debug_macro    0x00000000    0x2231a
+.debug_macro    0x00000000    0x224b9
  .debug_macro   0x00000000      0x34d CMakeFiles/sodiumBMS.dir/Core/Src/main.c.obj
  .debug_macro   0x0000034d      0xab4 CMakeFiles/sodiumBMS.dir/Core/Src/main.c.obj
  .debug_macro   0x00000e01      0x29b CMakeFiles/sodiumBMS.dir/Core/Src/main.c.obj
@@ -3444,144 +3468,149 @@ LOAD linker stubs
  .debug_macro   0x000218f9      0x1bd cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
  .debug_macro   0x00021ab6      0x199 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj
  .debug_macro   0x00021c4f      0x19f cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
- .debug_macro   0x00021dee      0x199 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
- .debug_macro   0x00021f87      0x1f9 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
- .debug_macro   0x00022180      0x19a cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+ .debug_macro   0x00021dee      0x19f cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+ .debug_macro   0x00021f8d      0x199 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .debug_macro   0x00022126      0x1f9 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .debug_macro   0x0002231f      0x19a cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
 
-.debug_line     0x00000000     0xbaaa
- .debug_line    0x00000000      0x836 CMakeFiles/sodiumBMS.dir/Core/Src/main.c.obj
- .debug_line    0x00000836      0x5bc CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_it.c.obj
- .debug_line    0x00000df2      0x58d CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_hal_msp.c.obj
- .debug_line    0x0000137f      0x1c2 CMakeFiles/sodiumBMS.dir/Core/Src/sysmem.c.obj
- .debug_line    0x00001541       0x7a CMakeFiles/sodiumBMS.dir/startup_stm32f446xx.s.obj
- .debug_line    0x000015bb      0x56f cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
- .debug_line    0x00001b2a     0x1099 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
- .debug_line    0x00002bc3      0xb97 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
- .debug_line    0x0000375a     0x1206 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj
- .debug_line    0x00004960      0x97a cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
- .debug_line    0x000052da      0xaf4 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
- .debug_line    0x00005dce      0x802 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
- .debug_line    0x000065d0     0x2705 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
- .debug_line    0x00008cd5       0x4e /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
- .debug_line    0x00008d23      0x576 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
- .debug_line    0x00009299       0x4a /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_dvmd_tls.o)
- .debug_line    0x000092e3      0x103 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-errno.o)
- .debug_line    0x000093e6       0xde /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-impure.o)
- .debug_line    0x000094c4      0x12c /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-init.o)
- .debug_line    0x000095f0      0x1b0 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memset.o)
- .debug_line    0x000097a0      0x206 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-sprintf.o)
- .debug_line    0x000099a6       0x87 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-strlen.o)
- .debug_line    0x00009a2d      0x833 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-svfprintf.o)
- .debug_line    0x0000a260      0x744 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-vfprintf_i.o)
- .debug_line    0x0000a9a4       0x82 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memchr.o)
- .debug_line    0x0000aa26       0xb9 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memcpy.o)
- .debug_line    0x0000aadf      0x1ea /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memmove.o)
- .debug_line    0x0000acc9      0x2a6 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-freer.o)
- .debug_line    0x0000af6f      0x2cd /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-mallocr.o)
- .debug_line    0x0000b23c      0x1b4 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-reallocr.o)
- .debug_line    0x0000b3f0      0x177 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-sbrkr.o)
- .debug_line    0x0000b567      0x13b /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-mlock.o)
- .debug_line    0x0000b6a2      0x154 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-msizer.o)
- .debug_line    0x0000b7f6      0x2b4 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-reent.o)
+.debug_line     0x00000000     0xc962
+ .debug_line    0x00000000      0x912 CMakeFiles/sodiumBMS.dir/Core/Src/main.c.obj
+ .debug_line    0x00000912      0x5d4 CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_it.c.obj
+ .debug_line    0x00000ee6      0x5df CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_line    0x000014c5      0x1c2 CMakeFiles/sodiumBMS.dir/Core/Src/sysmem.c.obj
+ .debug_line    0x00001687       0x7a CMakeFiles/sodiumBMS.dir/startup_stm32f446xx.s.obj
+ .debug_line    0x00001701      0x56f cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
+ .debug_line    0x00001c70     0x1099 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
+ .debug_line    0x00002d09      0xb97 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+ .debug_line    0x000038a0     0x1206 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj
+ .debug_line    0x00004aa6      0x97a cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+ .debug_line    0x00005420      0xd72 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+ .debug_line    0x00006192      0xaf4 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .debug_line    0x00006c86      0x802 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .debug_line    0x00007488     0x2705 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+ .debug_line    0x00009b8d       0x4e /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
+ .debug_line    0x00009bdb      0x576 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+ .debug_line    0x0000a151       0x4a /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_dvmd_tls.o)
+ .debug_line    0x0000a19b      0x103 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-errno.o)
+ .debug_line    0x0000a29e       0xde /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-impure.o)
+ .debug_line    0x0000a37c      0x12c /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-init.o)
+ .debug_line    0x0000a4a8      0x1b0 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memset.o)
+ .debug_line    0x0000a658      0x206 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-sprintf.o)
+ .debug_line    0x0000a85e       0x87 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-strlen.o)
+ .debug_line    0x0000a8e5      0x833 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-svfprintf.o)
+ .debug_line    0x0000b118      0x744 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-vfprintf_i.o)
+ .debug_line    0x0000b85c       0x82 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memchr.o)
+ .debug_line    0x0000b8de       0xb9 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memcpy.o)
+ .debug_line    0x0000b997      0x1ea /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memmove.o)
+ .debug_line    0x0000bb81      0x2a6 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-freer.o)
+ .debug_line    0x0000be27      0x2cd /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-mallocr.o)
+ .debug_line    0x0000c0f4      0x1b4 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-reallocr.o)
+ .debug_line    0x0000c2a8      0x177 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-sbrkr.o)
+ .debug_line    0x0000c41f      0x13b /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-mlock.o)
+ .debug_line    0x0000c55a      0x154 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-msizer.o)
+ .debug_line    0x0000c6ae      0x2b4 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-reent.o)
 
-.debug_str      0x00000000    0xd6471
- .debug_str     0x00000000    0xd2895 CMakeFiles/sodiumBMS.dir/Core/Src/main.c.obj
-                              0xd2c0c (size before relaxing)
- .debug_str     0x000d2895       0xe4 CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_it.c.obj
-                              0xce74c (size before relaxing)
- .debug_str     0x000d2979       0xa8 CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_hal_msp.c.obj
-                              0xcee97 (size before relaxing)
- .debug_str     0x000d2a21      0x4f5 CMakeFiles/sodiumBMS.dir/Core/Src/sysmem.c.obj
+.debug_str      0x00000000    0xd6808
+ .debug_str     0x00000000    0xd2e3c CMakeFiles/sodiumBMS.dir/Core/Src/main.c.obj
+                              0xd31e7 (size before relaxing)
+ .debug_str     0x000d2e3c      0x10f CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_it.c.obj
+                              0xce9d6 (size before relaxing)
+ .debug_str     0x000d2f4b       0xbf CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+                              0xcef03 (size before relaxing)
+ .debug_str     0x000d300a      0x4f5 CMakeFiles/sodiumBMS.dir/Core/Src/sysmem.c.obj
                                0x5676 (size before relaxing)
- .debug_str     0x000d2f16       0x4e CMakeFiles/sodiumBMS.dir/startup_stm32f446xx.s.obj
+ .debug_str     0x000d34ff       0x4e CMakeFiles/sodiumBMS.dir/startup_stm32f446xx.s.obj
                                  0x72 (size before relaxing)
- .debug_str     0x000d2f64      0x12c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
+ .debug_str     0x000d354d      0x12c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
                               0xce7e3 (size before relaxing)
- .debug_str     0x000d3090      0x2d9 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
+ .debug_str     0x000d3679      0x2f9 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
                               0xcedbb (size before relaxing)
- .debug_str     0x000d3369      0x2a2 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+ .debug_str     0x000d3972      0x2a2 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
                               0xcec21 (size before relaxing)
- .debug_str     0x000d360b      0x35a cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj
+ .debug_str     0x000d3c14      0x35a cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj
                               0xcec5f (size before relaxing)
- .debug_str     0x000d3965      0x157 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+ .debug_str     0x000d3f6e      0x144 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
                               0xce96e (size before relaxing)
- .debug_str     0x000d3abc      0x927 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .debug_str     0x000d40b2      0x305 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+                              0xcebf3 (size before relaxing)
+ .debug_str     0x000d43b7      0x3f3 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
                               0xcf110 (size before relaxing)
- .debug_str     0x000d43e3      0x5aa cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .debug_str     0x000d47aa      0x5aa cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
                               0xcf3cd (size before relaxing)
- .debug_str     0x000d498d      0x657 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+ .debug_str     0x000d4d54      0x635 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
                               0xcf1d8 (size before relaxing)
- .debug_str     0x000d4fe4       0xa3 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
- .debug_str     0x000d5087      0x576 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+ .debug_str     0x000d5389       0xa3 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
+ .debug_str     0x000d542c      0x576 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
                                 0x676 (size before relaxing)
- .debug_str     0x000d55fd       0x4c /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_dvmd_tls.o)
+ .debug_str     0x000d59a2       0x4c /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_dvmd_tls.o)
                                  0xc3 (size before relaxing)
- .debug_str     0x000d5649      0x3f0 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-errno.o)
+ .debug_str     0x000d59ee      0x3f0 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-errno.o)
                                 0x4f7 (size before relaxing)
- .debug_str     0x000d5a39       0xd9 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-impure.o)
+ .debug_str     0x000d5dde       0xd9 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-impure.o)
                                 0x54e (size before relaxing)
- .debug_str     0x000d5b12       0xf0 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-init.o)
+ .debug_str     0x000d5eb7       0xf0 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-init.o)
                                 0x1fb (size before relaxing)
- .debug_str     0x000d5c02       0xab /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memset.o)
+ .debug_str     0x000d5fa7       0xa4 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memset.o)
                                 0x1b0 (size before relaxing)
- .debug_str     0x000d5cad       0xac /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-sprintf.o)
+ .debug_str     0x000d604b       0xac /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-sprintf.o)
                                 0x53c (size before relaxing)
- .debug_str     0x000d5d59       0xa3 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-strlen.o)
+ .debug_str     0x000d60f7       0xa3 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-strlen.o)
                                  0xb6 (size before relaxing)
- .debug_str     0x000d5dfc      0x298 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-svfprintf.o)
+ .debug_str     0x000d619a      0x298 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-svfprintf.o)
                                 0x845 (size before relaxing)
- .debug_str     0x000d6094       0x94 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-vfprintf_i.o)
+ .debug_str     0x000d6432       0x8d /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-vfprintf_i.o)
                                 0x7dc (size before relaxing)
- .debug_str     0x000d6128       0x3c /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memchr.o)
+ .debug_str     0x000d64bf       0x3c /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memchr.o)
                                  0xa9 (size before relaxing)
- .debug_str     0x000d6164       0x43 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memcpy.o)
+ .debug_str     0x000d64fb       0x43 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memcpy.o)
                                  0xb7 (size before relaxing)
- .debug_str     0x000d61a7       0x66 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memmove.o)
+ .debug_str     0x000d653e       0x66 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memmove.o)
                                 0x1cf (size before relaxing)
- .debug_str     0x000d620d      0x110 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-freer.o)
+ .debug_str     0x000d65a4      0x110 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-freer.o)
                                 0x585 (size before relaxing)
- .debug_str     0x000d631d       0x46 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-mallocr.o)
+ .debug_str     0x000d66b4       0x46 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-mallocr.o)
                                 0x5ba (size before relaxing)
- .debug_str     0x000d6363       0x23 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-reallocr.o)
+ .debug_str     0x000d66fa       0x23 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-reallocr.o)
                                 0x56f (size before relaxing)
- .debug_str     0x000d6386       0x32 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-sbrkr.o)
+ .debug_str     0x000d671d       0x32 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-sbrkr.o)
                                 0x506 (size before relaxing)
- .debug_str     0x000d63b8       0x4c /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-mlock.o)
+ .debug_str     0x000d674f       0x4c /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-mlock.o)
                                 0x51c (size before relaxing)
- .debug_str     0x000d6404        0xf /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-msizer.o)
+ .debug_str     0x000d679b        0xf /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-msizer.o)
                                 0x54d (size before relaxing)
- .debug_str     0x000d6413       0x5e /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-reent.o)
+ .debug_str     0x000d67aa       0x5e /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-reent.o)
                                 0x52e (size before relaxing)
 
-.debug_frame    0x00000000     0x2254
- .debug_frame   0x00000000       0xcc CMakeFiles/sodiumBMS.dir/Core/Src/main.c.obj
- .debug_frame   0x000000cc      0x104 CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_it.c.obj
- .debug_frame   0x000001d0       0xc8 CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_hal_msp.c.obj
- .debug_frame   0x00000298       0x34 CMakeFiles/sodiumBMS.dir/Core/Src/sysmem.c.obj
- .debug_frame   0x000002cc       0x58 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
- .debug_frame   0x00000324      0x3fc cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
- .debug_frame   0x00000720      0x1f4 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
- .debug_frame   0x00000914      0x1e8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj
- .debug_frame   0x00000afc      0x14c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
- .debug_frame   0x00000c48      0x508 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
- .debug_frame   0x00001150      0x374 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
- .debug_frame   0x000014c4      0x954 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
- .debug_frame   0x00001e18       0x2c /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
- .debug_frame   0x00001e44       0x34 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
- .debug_frame   0x00001e78       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-errno.o)
- .debug_frame   0x00001e98       0x2c /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-init.o)
- .debug_frame   0x00001ec4       0x2c /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memset.o)
- .debug_frame   0x00001ef0       0x74 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-sprintf.o)
- .debug_frame   0x00001f64       0x98 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-svfprintf.o)
- .debug_frame   0x00001ffc       0x6c /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-vfprintf_i.o)
- .debug_frame   0x00002068       0x40 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memmove.o)
- .debug_frame   0x000020a8       0x58 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-freer.o)
- .debug_frame   0x00002100       0x30 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-mallocr.o)
- .debug_frame   0x00002130       0x38 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-reallocr.o)
- .debug_frame   0x00002168       0x2c /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-sbrkr.o)
- .debug_frame   0x00002194       0x30 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-mlock.o)
- .debug_frame   0x000021c4       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-msizer.o)
- .debug_frame   0x000021e4       0x70 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-reent.o)
+.debug_frame    0x00000000     0x2530
+ .debug_frame   0x00000000      0x13c CMakeFiles/sodiumBMS.dir/Core/Src/main.c.obj
+ .debug_frame   0x0000013c      0x120 CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_it.c.obj
+ .debug_frame   0x0000025c       0xc8 CMakeFiles/sodiumBMS.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_frame   0x00000324       0x34 CMakeFiles/sodiumBMS.dir/Core/Src/sysmem.c.obj
+ .debug_frame   0x00000358       0x58 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
+ .debug_frame   0x000003b0      0x3fc cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
+ .debug_frame   0x000007ac      0x1f4 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+ .debug_frame   0x000009a0      0x1e8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj
+ .debug_frame   0x00000b88      0x14c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+ .debug_frame   0x00000cd4      0x250 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+ .debug_frame   0x00000f24      0x508 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .debug_frame   0x0000142c      0x374 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .debug_frame   0x000017a0      0x954 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/home/buddy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+ .debug_frame   0x000020f4       0x2c /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
+ .debug_frame   0x00002120       0x34 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+ .debug_frame   0x00002154       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-errno.o)
+ .debug_frame   0x00002174       0x2c /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-init.o)
+ .debug_frame   0x000021a0       0x2c /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memset.o)
+ .debug_frame   0x000021cc       0x74 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-sprintf.o)
+ .debug_frame   0x00002240       0x98 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-svfprintf.o)
+ .debug_frame   0x000022d8       0x6c /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-vfprintf_i.o)
+ .debug_frame   0x00002344       0x40 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memmove.o)
+ .debug_frame   0x00002384       0x58 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-freer.o)
+ .debug_frame   0x000023dc       0x30 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-mallocr.o)
+ .debug_frame   0x0000240c       0x38 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-reallocr.o)
+ .debug_frame   0x00002444       0x2c /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-sbrkr.o)
+ .debug_frame   0x00002470       0x30 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-mlock.o)
+ .debug_frame   0x000024a0       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-nano-msizer.o)
+ .debug_frame   0x000024c0       0x70 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-reent.o)
 
 .debug_line_str
                 0x00000000      0x1b7
