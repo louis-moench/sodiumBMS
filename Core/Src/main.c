@@ -140,8 +140,16 @@ int main(void)
     
     if (cell1_voltage > 4000) {
     
-       HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
+        HAL_GPIO_WritePin(GPIOC, GPIO_PIN_3, GPIO_PIN_RESET);
+        char *status = "closing gate\r\n";
+        HAL_UART_Transmit(&huart2, (uint8_t *)status, strlen(status), HAL_MAX_DELAY);
     
+    }
+
+    if (cell1_voltage < 1000) {
+        HAL_GPIO_WritePin(GPIOC, GPIO_PIN_3, GPIO_PIN_SET);
+        char *status = "opening gate\r\n";
+        HAL_UART_Transmit(&huart2, (uint8_t *)status, strlen(status), HAL_MAX_DELAY);
     }
 
     /* USER CODE END WHILE */
@@ -394,7 +402,7 @@ static void MX_GPIO_Init(void)
   /*Configure GPIO pin : GATE_Pin */
   GPIO_InitStruct.Pin = GATE_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Pull = GPIO_PULLUP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GATE_GPIO_Port, &GPIO_InitStruct);
 
