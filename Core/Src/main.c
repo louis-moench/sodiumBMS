@@ -49,10 +49,11 @@ DMA_HandleTypeDef hdma_adc1;
 UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN PV */
+#define ADC_BUF_LEN 3
 volatile uint8_t adc_ready = 0;
 uint16_t volts=0;
 char msg[64] = "THIS IS A AAAAAAAAAA";
-uint16_t adc_buffer[3];
+uint16_t adc_buffer[ADC_BUF_LEN];
 uint16_t cell1_voltage;
 uint16_t cell2_voltage;
 uint16_t cell3_voltage;
@@ -108,7 +109,9 @@ int main(void)
   MX_ADC1_Init();
   MX_ADC2_Init();
   /* USER CODE BEGIN 2 */
+  snprintf(msg, sizeof(msg), "%s", "about to start adc\r\n");
   HAL_UART_Transmit(&huart2, (uint8_t *)msg, strlen(msg), 20);
+  HAL_ADC_Start_DMA(&hadc1, (uint32_t *)adc_buffer, ADC_BUF_LEN);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -116,15 +119,20 @@ int main(void)
   while (1)
   {
     char msg_fail[64] = "fail";
-      sprintf(msg, "Voltage 1: %hu \r\n", cell1_voltage);
-   
+    
+    uint16_t cell1_voltage = adc_buffer[0];
+    sprintf(msg, "Voltage 1: %hu \r\n", cell1_voltage);
     HAL_UART_Transmit(&huart2, (uint8_t *)msg, strlen(msg), HAL_MAX_DELAY);
+  
+    uint16_t cell2_voltage = adc_buffer[1];
     sprintf(msg, "Voltage 2: %hu \r\n", cell2_voltage);
     HAL_UART_Transmit(&huart2, (uint8_t *)msg, strlen(msg), HAL_MAX_DELAY);
+ 
+    uint16_t cell3_voltage = adc_buffer[2];
     sprintf(msg, "Voltage 3: %hu \r\n", cell3_voltage);
     
     HAL_UART_Transmit(&huart2, (uint8_t *)msg, strlen(msg), HAL_MAX_DELAY);
-    
+   
     HAL_Delay(500);
 
     char *test = "Hello \r\n";
@@ -207,7 +215,7 @@ static void MX_ADC1_Init(void)
   hadc1.Init.ExternalTrigConvEdge = ADC_EXTERNALTRIGCONVEDGE_NONE;
   hadc1.Init.ExternalTrigConv = ADC_SOFTWARE_START;
   hadc1.Init.DataAlign = ADC_DATAALIGN_RIGHT;
-  hadc1.Init.NbrOfConversion = 1;
+  hadc1.Init.NbrOfConversion = 3;
   hadc1.Init.DMAContinuousRequests = ENABLE;
   hadc1.Init.EOCSelection = ADC_EOC_SEQ_CONV;
   if (HAL_ADC_Init(&hadc1) != HAL_OK)
@@ -219,7 +227,25 @@ static void MX_ADC1_Init(void)
   */
   sConfig.Channel = ADC_CHANNEL_0;
   sConfig.Rank = 1;
-  sConfig.SamplingTime = ADC_SAMPLETIME_3CYCLES;
+  sConfig.SamplingTime = ADC_SAMPLETIME_144CYCLES;
+  if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+
+  /** Configure for the selected ADC regular channel its corresponding rank in the sequencer and its sample time.
+  */
+  sConfig.Channel = ADC_CHANNEL_1;
+  sConfig.Rank = 2;
+  if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+
+  /** Configure for the selected ADC regular channel its corresponding rank in the sequencer and its sample time.
+  */
+  sConfig.Channel = ADC_CHANNEL_4;
+  sConfig.Rank = 3;
   if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
   {
     Error_Handler();
@@ -379,6 +405,7 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
 */
 
 // In callback:
+/*
 void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc) {
     if (hadc->Instance == ADC1) {
         cell1_voltage = adc_buffer[0];  // Rank 1 pin
@@ -390,7 +417,7 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc) {
     HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
 
 }
-
+*/
 /* USER CODE END 4 */
 
 /**
