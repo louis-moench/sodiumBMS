@@ -118,14 +118,15 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    char msg_fail[64] = "fail";
     
     uint16_t cell1_voltage = adc_buffer[0];
-    sprintf(msg, "Voltage 1: %hu \r\n", cell1_voltage);
+    sprintf(msg, "Potentiometer voltage: %hu \r\n", cell1_voltage);
     HAL_UART_Transmit(&huart2, (uint8_t *)msg, strlen(msg), HAL_MAX_DELAY);
   
+    HAL_Delay(250);
+
     uint16_t cell2_voltage = adc_buffer[1];
-    sprintf(msg, "Voltage 2: %hu \r\n", cell2_voltage);
+    sprintf(msg, "Emitter voltage: %hu \r\n", cell2_voltage);
     HAL_UART_Transmit(&huart2, (uint8_t *)msg, strlen(msg), HAL_MAX_DELAY);
  
     uint16_t cell3_voltage = adc_buffer[2];
@@ -133,12 +134,12 @@ int main(void)
     
     HAL_UART_Transmit(&huart2, (uint8_t *)msg, strlen(msg), HAL_MAX_DELAY);
    
-    HAL_Delay(500);
-
+/*
     char *test = "Hello \r\n";
     HAL_UART_Transmit(&huart2, (uint8_t *)test, strlen(test), HAL_MAX_DELAY);
-    
-    if (cell1_voltage > 4000) {
+    */
+
+    if (cell1_voltage > 2000) {
     
         HAL_GPIO_WritePin(GPIOC, GPIO_PIN_3, GPIO_PIN_RESET);
         char *status = "closing gate\r\n";
@@ -146,7 +147,7 @@ int main(void)
     
     }
 
-    if (cell1_voltage < 1000) {
+    if (cell1_voltage < 2000) {
         HAL_GPIO_WritePin(GPIOC, GPIO_PIN_3, GPIO_PIN_SET);
         char *status = "opening gate\r\n";
         HAL_UART_Transmit(&huart2, (uint8_t *)status, strlen(status), HAL_MAX_DELAY);
