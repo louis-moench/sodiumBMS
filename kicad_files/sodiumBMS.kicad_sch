@@ -5,6 +5,200 @@
 	(uuid "fcdd2084-f4ec-4b1b-b9ac-497c327c0303")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Amplifier_Current:INA180A4"
+			(pin_names
+				(offset 0.127)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 3.81 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "INA180A4"
+				(at 3.81 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+				(at 1.27 1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/ina180.pdf"
+				(at 3.81 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Current Sense Amplifier, 1 Circuit, Rail-to-Rail, 26V, Gain 200 V/V, SOT-23-5"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "current monitor shunt sensor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "SOT?23*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "INA180A4_0_1"
+				(polyline
+					(pts
+						(xy 5.08 0) (xy -5.08 5.08) (xy -5.08 -5.08) (xy 5.08 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "INA180A4_1_1"
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 -7.62 90)
+					(length 3.81)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 7.62 270)
+					(length 3.81)
+					(name "V+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector:USB_C_Receptacle_PowerOnly_6P"
 			(pin_names
 				(offset 1.016)
@@ -2129,39 +2323,9 @@
 		)
 		(uuid "25d5c4b0-0c9f-452d-b6ea-15d975b3ac3c")
 	)
-	(text "cell2"
-		(exclude_from_sim no)
-		(at 144.018 111.76 0)
-		(effects
-			(font
-				(size 0.762 0.762)
-			)
-		)
-		(uuid "36b36f6a-41f0-4dd9-b07a-7e8071f4842b")
-	)
-	(text "cell2"
-		(exclude_from_sim no)
-		(at 150.368 95.25 0)
-		(effects
-			(font
-				(size 0.762 0.762)
-			)
-		)
-		(uuid "46fbe36f-e8de-4445-aa66-923f021ab99b")
-	)
-	(text "Discharge currents"
-		(exclude_from_sim no)
-		(at 170.688 108.966 0)
-		(effects
-			(font
-				(size 0.762 0.762)
-			)
-		)
-		(uuid "4e3b43c9-025a-4309-9ca2-3f771a9e85d8")
-	)
 	(text "Current sensing resistors"
 		(exclude_from_sim no)
-		(at 146.812 118.11 0)
+		(at 199.136 35.814 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2171,7 +2335,7 @@
 	)
 	(text "Charge currents"
 		(exclude_from_sim no)
-		(at 168.402 95.758 0)
+		(at 180.086 35.052 0)
 		(effects
 			(font
 				(size 0.762 0.762)
@@ -2189,46 +2353,6 @@
 		)
 		(uuid "662b0391-6b02-4ff1-aab6-3e34af360a49")
 	)
-	(text "cell1"
-		(exclude_from_sim no)
-		(at 139.954 91.694 0)
-		(effects
-			(font
-				(size 0.762 0.762)
-			)
-		)
-		(uuid "6da48d81-1c31-496f-98e3-6384c7031047")
-	)
-	(text "cell3"
-		(exclude_from_sim no)
-		(at 160.528 99.06 0)
-		(effects
-			(font
-				(size 0.762 0.762)
-			)
-		)
-		(uuid "6e69d852-ab49-4d49-9bf6-2f41a5e9603e")
-	)
-	(text "cell1"
-		(exclude_from_sim no)
-		(at 132.334 111.76 0)
-		(effects
-			(font
-				(size 0.762 0.762)
-			)
-		)
-		(uuid "845a418c-f17e-4325-8eeb-38ccf9846739")
-	)
-	(text "cell3"
-		(exclude_from_sim no)
-		(at 155.956 112.014 0)
-		(effects
-			(font
-				(size 0.762 0.762)
-			)
-		)
-		(uuid "d528b428-2f21-4c34-9427-c6c33adc7a47")
-	)
 	(text "Balance current = 100mA?\nOCD1 sensing resistor 118mOhm\nOCC sensing resistor 142mOhm\n"
 		(exclude_from_sim no)
 		(at 44.45 166.878 0)
@@ -2240,10 +2364,22 @@
 		(uuid "ee49992a-9a0d-4ee1-84c6-ea1b8902c821")
 	)
 	(junction
-		(at 147.32 87.63)
+		(at 213.36 19.05)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "394ce5af-ae95-4274-b866-6ca1162d833a")
+		(uuid "2bce64b4-3d0d-48c8-ad53-168a734468e0")
+	)
+	(junction
+		(at 167.64 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "46fb327d-56b4-4a7c-83c9-e9a4dfeecd2c")
+	)
+	(junction
+		(at 213.36 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6de5b9be-3fa7-4dc9-9aa0-dc2a78fab710")
 	)
 	(junction
 		(at 160.02 69.85)
@@ -2258,22 +2394,16 @@
 		(uuid "8057b277-e290-41ce-9247-159ffc2479b8")
 	)
 	(junction
-		(at 137.16 83.82)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "88a606bf-1bb3-4269-8050-276e169ad76a")
-	)
-	(junction
 		(at 151.13 62.23)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bf917783-7469-4067-a488-ea391b4e265f")
 	)
 	(junction
-		(at 157.48 91.44)
+		(at 167.64 19.05)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "cc6a509f-cfdc-4bed-806c-ba432ee7de62")
+		(uuid "c3dedd03-e149-4b72-be0f-cbb983710605")
 	)
 	(wire
 		(pts
@@ -2297,23 +2427,23 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 20.32) (xy 212.09 101.6)
+			(xy 213.36 26.67) (xy 213.36 27.94)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "15e1e531-7f09-4cc9-add0-47463ffc9048")
+		(uuid "1a8ea275-3f29-4b18-94cd-cb7138c7550b")
 	)
 	(wire
 		(pts
-			(xy 158.75 102.87) (xy 158.75 104.14)
+			(xy 213.36 19.05) (xy 213.36 20.32)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1bb787cf-82bd-42c4-a7d4-7eb56ca14847")
+		(uuid "202575d5-17e7-4424-95c2-6aca29f0cda0")
 	)
 	(wire
 		(pts
@@ -2327,33 +2457,23 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 95.25) (xy 133.35 95.25)
+			(xy 167.64 19.05) (xy 179.07 19.05)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "28031bf5-ee84-4f4f-b0cf-17cec796632a")
+		(uuid "34f79706-a310-411a-871c-4c83e02009c6")
 	)
 	(wire
 		(pts
-			(xy 137.16 83.82) (xy 167.64 83.82)
+			(xy 179.07 25.4) (xy 179.07 26.67)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "30e205ab-ef4c-4ffb-b18b-2c9996eb9eb5")
-	)
-	(wire
-		(pts
-			(xy 147.32 101.6) (xy 212.09 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4da64dd9-1abc-4a40-8da8-4149314323d5")
+		(uuid "4c1892f9-689f-4b46-bff1-e411745aea4c")
 	)
 	(wire
 		(pts
@@ -2364,26 +2484,6 @@
 			(type default)
 		)
 		(uuid "4daaff7c-3577-49f1-ac24-e9d7fb822c70")
-	)
-	(wire
-		(pts
-			(xy 132.08 97.79) (xy 132.08 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "519f022b-26af-43fc-b7ba-04693df3b1a4")
-	)
-	(wire
-		(pts
-			(xy 157.48 91.44) (xy 153.67 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "530d63dc-9f01-44e9-8f2e-e1b19f6034de")
 	)
 	(wire
 		(pts
@@ -2427,83 +2527,13 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 100.33) (xy 135.89 104.14)
+			(xy 179.07 19.05) (xy 179.07 20.32)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6c494ccc-f6bb-4c4a-9b32-b3e58f5f1e36")
-	)
-	(wire
-		(pts
-			(xy 167.64 20.32) (xy 167.64 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6ebd8ba2-cf60-427c-bcfa-c8e66ea0570b")
-	)
-	(wire
-		(pts
-			(xy 190.5 20.32) (xy 190.5 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "742c1712-9ae8-417b-828c-d9e12da71246")
-	)
-	(wire
-		(pts
-			(xy 144.78 87.63) (xy 144.78 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7519cdad-6261-4b3a-a0b3-ebca6957462e")
-	)
-	(wire
-		(pts
-			(xy 200.66 20.32) (xy 200.66 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8142170c-144b-400a-97ea-61b703218233")
-	)
-	(wire
-		(pts
-			(xy 153.67 97.79) (xy 132.08 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "81aaacfb-8c4e-4385-beb0-cc22671dfc6e")
-	)
-	(wire
-		(pts
-			(xy 147.32 87.63) (xy 180.34 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "88156693-25d0-4201-8680-e81256c1f210")
-	)
-	(wire
-		(pts
-			(xy 134.62 83.82) (xy 137.16 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8ac8cded-fe06-4ead-aa47-bceb4d2fa1f9")
+		(uuid "7435bf34-74e7-44fa-be2a-489b3de04fe0")
 	)
 	(wire
 		(pts
@@ -2537,16 +2567,6 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 62.23) (xy 132.08 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "950d2aeb-cb08-4249-911d-7a6452a86959")
-	)
-	(wire
-		(pts
 			(xy 148.59 62.23) (xy 148.59 66.04)
 		)
 		(stroke
@@ -2554,6 +2574,16 @@
 			(type default)
 		)
 		(uuid "95b6f0d1-6e7f-4a84-914b-70dcf71be248")
+	)
+	(wire
+		(pts
+			(xy 213.36 26.67) (xy 227.33 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "962bce7b-cc04-4871-8991-7041e4728dd5")
 	)
 	(wire
 		(pts
@@ -2577,56 +2607,6 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 91.44) (xy 190.5 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9fb6ff67-fce6-4362-9ae2-0f670bb500c8")
-	)
-	(wire
-		(pts
-			(xy 133.35 59.69) (xy 114.3 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a3203aaf-7eb2-458e-b47c-e106ada48251")
-	)
-	(wire
-		(pts
-			(xy 147.32 87.63) (xy 144.78 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a444a3bc-b498-4ba3-876c-87a76e45a09c")
-	)
-	(wire
-		(pts
-			(xy 147.32 101.6) (xy 147.32 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aab4a10e-b938-4ff1-8bfd-6bce1b3caf85")
-	)
-	(wire
-		(pts
-			(xy 133.35 95.25) (xy 133.35 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b035d2dd-fcca-471e-aca0-145f4dfc90ad")
-	)
-	(wire
-		(pts
 			(xy 148.59 66.04) (xy 137.16 66.04)
 		)
 		(stroke
@@ -2637,23 +2617,13 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 20.32) (xy 220.98 102.87)
+			(xy 227.33 25.4) (xy 227.33 26.67)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bb35ff87-66dd-4e86-ac21-278f084c7560")
-	)
-	(wire
-		(pts
-			(xy 153.67 91.44) (xy 153.67 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bd9f28c7-5c7c-4ebd-a902-45dffdd98b04")
+		(uuid "c584a081-e0cb-4b5c-acb2-3bb7b788bbf0")
 	)
 	(wire
 		(pts
@@ -2687,6 +2657,26 @@
 	)
 	(wire
 		(pts
+			(xy 167.64 26.67) (xy 179.07 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5913ea1-7e0e-4376-b6fd-a27c16316ae3")
+	)
+	(wire
+		(pts
+			(xy 227.33 20.32) (xy 227.33 19.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7e1d4fe-00a0-455b-8806-b1459b2b7347")
+	)
+	(wire
+		(pts
 			(xy 151.13 62.23) (xy 148.59 62.23)
 		)
 		(stroke
@@ -2707,47 +2697,109 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 100.33) (xy 200.66 100.33)
+			(xy 167.64 19.05) (xy 167.64 20.32)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ee644f45-9b15-4220-939a-0de84b3b97d2")
+		(uuid "e936626f-3760-436c-b752-83662152d55f")
 	)
 	(wire
 		(pts
-			(xy 134.62 57.15) (xy 134.62 83.82)
+			(xy 167.64 26.67) (xy 167.64 27.94)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f12c399f-89b5-433a-963e-b4699801a32d")
+		(uuid "e9cf8fef-056c-4881-a194-ae8297c11750")
 	)
 	(wire
 		(pts
-			(xy 158.75 102.87) (xy 220.98 102.87)
+			(xy 213.36 19.05) (xy 227.33 19.05)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f7655ed7-51fc-449d-ac92-bbd4dfe213dc")
+		(uuid "f427fbd5-2e1e-4e82-98ef-56f17f59acc1")
 	)
-	(wire
-		(pts
-			(xy 180.34 87.63) (xy 180.34 20.32)
+	(global_label "i_chg_sense"
+		(shape input)
+		(at 194.31 22.86 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
 		)
-		(stroke
-			(width 0)
-			(type default)
+		(uuid "8d9f61e3-826d-4d85-a35f-056bfbedd8c7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 208.6042 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
 		)
-		(uuid "fabd60c2-0c1b-47d2-92f8-1a480e254a07")
+	)
+	(global_label "i_chg_sense"
+		(shape input)
+		(at 114.3 64.77 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "cb4ae9f5-2e46-44dd-bc9a-d119501784ce")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 128.5942 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "3.3V"
+		(shape input)
+		(at 184.15 15.24 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d4e1df03-fb00-4584-80c2-baa82f9e6b95")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 191.2476 15.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 147.32 91.44 0)
+		(at 213.36 22.86 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2758,7 +2810,7 @@
 		(fields_autoplaced yes)
 		(uuid "03d76398-018c-45b1-a0f2-a3cb2dfcd969")
 		(property "Reference" "R8"
-			(at 149.86 90.1699 0)
+			(at 215.9 21.5899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2769,7 +2821,7 @@
 			)
 		)
 		(property "Value" "R"
-			(at 149.86 92.7099 0)
+			(at 215.9 24.1299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2780,7 +2832,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 145.542 91.44 90)
+			(at 211.582 22.86 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2791,7 +2843,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 147.32 91.44 0)
+			(at 213.36 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2802,7 +2854,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 147.32 91.44 0)
+			(at 213.36 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2911,84 +2963,6 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 200.66 17.78 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "088370f2-70b3-47f2-a6e3-f7157809ed73")
-		(property "Reference" "H7"
-			(at 203.2 15.24 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.889 0.889)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "dischg_c1"
-			(at 198.374 13.462 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.889 0.889)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 200.66 17.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 200.66 17.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Mounting Hole with connection"
-			(at 200.66 17.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c9b9178c-c3d7-46eb-b731-3ffe73a05d5f")
-		)
-		(instances
-			(project "sodiumBMS"
-				(path "/fcdd2084-f4ec-4b1b-b9ac-497c327c0303"
-					(reference "H7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
 		(at 142.24 17.78 0)
 		(unit 1)
 		(body_style 1)
@@ -3060,84 +3034,6 @@
 			(project "sodiumBMS"
 				(path "/fcdd2084-f4ec-4b1b-b9ac-497c327c0303"
 					(reference "H1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 212.09 17.78 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "1ff647f1-7d3c-470b-b0eb-d25b81bb8baa")
-		(property "Reference" "H8"
-			(at 214.63 15.24 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.889 0.889)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "dischg_c2"
-			(at 209.042 12.7 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.889 0.889)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 212.09 17.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 212.09 17.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Mounting Hole with connection"
-			(at 212.09 17.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "53241710-3ed5-43a5-9ff0-2053e264c83b")
-		)
-		(instances
-			(project "sodiumBMS"
-				(path "/fcdd2084-f4ec-4b1b-b9ac-497c327c0303"
-					(reference "H8")
 					(unit 1)
 				)
 			)
@@ -3312,245 +3208,6 @@
 			(project "sodiumBMS"
 				(path "/fcdd2084-f4ec-4b1b-b9ac-497c327c0303"
 					(reference "#PWR04")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 158.75 111.76 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3a4d9b1c-82aa-4775-86a5-106e30252d5e")
-		(property "Reference" "#PWR09"
-			(at 158.75 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 158.75 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 158.75 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 158.75 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 158.75 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "468dbd2b-dae6-4bff-8127-2986ff643c09")
-		)
-		(instances
-			(project "sodiumBMS"
-				(path "/fcdd2084-f4ec-4b1b-b9ac-497c327c0303"
-					(reference "#PWR09")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 157.48 95.25 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "3d46d0a6-42fe-4aa9-9b18-45838044057c")
-		(property "Reference" "R9"
-			(at 160.02 93.726 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "R"
-			(at 160.02 96.266 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 155.702 95.25 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 157.48 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 157.48 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5347a035-bcfc-4a93-9261-90ef602b7cf7")
-		)
-		(pin "2"
-			(uuid "cdcd28dc-7afa-4f06-b7c9-b763ffe954ad")
-		)
-		(instances
-			(project "sodiumBMS"
-				(path "/fcdd2084-f4ec-4b1b-b9ac-497c327c0303"
-					(reference "R9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 157.48 99.06 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3f15530b-05e9-4587-a52c-2604d92aeb9f")
-		(property "Reference" "#PWR06"
-			(at 157.48 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 157.48 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 157.48 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 157.48 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 157.48 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b5c47c0b-e4e3-4d26-84be-c695849fcdf3")
-		)
-		(instances
-			(project "sodiumBMS"
-				(path "/fcdd2084-f4ec-4b1b-b9ac-497c327c0303"
-					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -3925,8 +3582,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "chgInput_cell1"
-			(at 168.148 19.558 0)
+		(property "Value" "i_chg_sense"
+			(at 163.068 13.208 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4062,7 +3719,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 147.32 95.25 0)
+		(at 213.36 27.94 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4073,7 +3730,7 @@
 		(fields_autoplaced yes)
 		(uuid "6af9f2a0-72e7-411a-9012-87a4e9eb8af9")
 		(property "Reference" "#PWR05"
-			(at 147.32 101.6 0)
+			(at 213.36 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4084,7 +3741,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 147.32 100.33 0)
+			(at 213.36 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4095,7 +3752,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 147.32 95.25 0)
+			(at 213.36 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4106,7 +3763,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 147.32 95.25 0)
+			(at 213.36 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4117,7 +3774,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 147.32 95.25 0)
+			(at 213.36 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4134,85 +3791,6 @@
 			(project "sodiumBMS"
 				(path "/fcdd2084-f4ec-4b1b-b9ac-497c327c0303"
 					(reference "#PWR05")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 135.89 111.76 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "71f46b2a-de6e-426d-8a3a-8636be53fecc")
-		(property "Reference" "#PWR07"
-			(at 135.89 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 135.89 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 135.89 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 135.89 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 135.89 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "906e7cd8-8386-4f0b-90cd-c986eefa60a6")
-		)
-		(instances
-			(project "sodiumBMS"
-				(path "/fcdd2084-f4ec-4b1b-b9ac-497c327c0303"
-					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -4384,88 +3962,6 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 147.32 107.95 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8fd1f4ee-ee36-4a37-a95e-f4f79d70699a")
-		(property "Reference" "R11"
-			(at 149.86 106.6799 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "R"
-			(at 149.86 109.2199 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 145.542 107.95 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 147.32 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 147.32 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "0c9ca400-4500-4dc3-bd53-715a222940cc")
-		)
-		(pin "1"
-			(uuid "385d0145-0fab-426f-8ccb-5951ad3704c2")
-		)
-		(instances
-			(project "sodiumBMS"
-				(path "/fcdd2084-f4ec-4b1b-b9ac-497c327c0303"
-					(reference "R11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
 		(at 151.13 58.42 0)
 		(unit 1)
 		(body_style 1)
@@ -4548,7 +4044,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 137.16 87.63 0)
+		(at 167.64 22.86 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4559,7 +4055,7 @@
 		(fields_autoplaced yes)
 		(uuid "93e9c99a-e39f-4a0b-8d58-92404956c40b")
 		(property "Reference" "R7"
-			(at 139.7 86.3599 0)
+			(at 170.18 21.5899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4570,7 +4066,7 @@
 			)
 		)
 		(property "Value" "R"
-			(at 139.7 88.8999 0)
+			(at 170.18 24.1299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4581,7 +4077,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 135.382 87.63 90)
+			(at 165.862 22.86 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4592,7 +4088,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 137.16 87.63 0)
+			(at 167.64 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4603,7 +4099,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 137.16 87.63 0)
+			(at 167.64 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4629,90 +4125,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 158.75 107.95 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "97e0d99b-c541-41ca-b6b8-690ce237390a")
-		(property "Reference" "R12"
-			(at 161.29 106.6799 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "R"
-			(at 161.29 109.2199 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 156.972 107.95 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 158.75 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 158.75 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "3036eb1c-db39-4620-8284-cef150d059f2")
-		)
-		(pin "1"
-			(uuid "3a9891d1-149d-4ce9-ae92-9b21686e3127")
-		)
-		(instances
-			(project "sodiumBMS"
-				(path "/fcdd2084-f4ec-4b1b-b9ac-497c327c0303"
-					(reference "R12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 180.34 17.78 0)
+		(at 213.36 17.78 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4722,7 +4136,7 @@
 		(dnp no)
 		(uuid "99296acb-255b-45b8-90dd-87e7c0fcd199")
 		(property "Reference" "H5"
-			(at 182.88 15.24 0)
+			(at 215.9 15.24 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4732,8 +4146,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "chgInput_cell2"
-			(at 174.752 13.462 0)
+		(property "Value" "i_dchg_sense"
+			(at 208.28 12.954 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4744,7 +4158,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 180.34 17.78 0)
+			(at 213.36 17.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4755,7 +4169,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 180.34 17.78 0)
+			(at 213.36 17.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4766,7 +4180,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 180.34 17.78 0)
+			(at 213.36 17.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4783,163 +4197,6 @@
 			(project "sodiumBMS"
 				(path "/fcdd2084-f4ec-4b1b-b9ac-497c327c0303"
 					(reference "H5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 147.32 111.76 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "99ca9cbb-0652-41c8-9b9d-8914b879e641")
-		(property "Reference" "#PWR08"
-			(at 147.32 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 147.32 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 147.32 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 147.32 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 147.32 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "52bb82af-baa2-4de1-b4d1-a62acaa7f55c")
-		)
-		(instances
-			(project "sodiumBMS"
-				(path "/fcdd2084-f4ec-4b1b-b9ac-497c327c0303"
-					(reference "#PWR08")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 190.5 17.78 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "a137bdd1-bedd-46a5-8e38-f5f9c74c5680")
-		(property "Reference" "H6"
-			(at 193.04 15.24 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.889 0.889)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "chgInput_cell3"
-			(at 185.928 13.462 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.889 0.889)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 190.5 17.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 190.5 17.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Mounting Hole with connection"
-			(at 190.5 17.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f1b82b3c-849e-43ad-9801-584c40ecde1d")
-		)
-		(instances
-			(project "sodiumBMS"
-				(path "/fcdd2084-f4ec-4b1b-b9ac-497c327c0303"
-					(reference "H6")
 					(unit 1)
 				)
 			)
@@ -5028,88 +4285,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 135.89 107.95 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "adc564a9-ac79-4bec-9f7c-8576a2d71f7f")
-		(property "Reference" "R10"
-			(at 138.43 106.6799 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "R"
-			(at 138.43 109.2199 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 134.112 107.95 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 135.89 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 135.89 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "c4ce7812-9f81-4de3-babb-68f73faa19e1")
-		)
-		(pin "1"
-			(uuid "0b68fceb-6f52-4538-adc4-362d9e86f840")
-		)
-		(instances
-			(project "sodiumBMS"
-				(path "/fcdd2084-f4ec-4b1b-b9ac-497c327c0303"
-					(reference "R10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 142.24 58.42 0)
 		(unit 1)
@@ -5183,6 +4358,97 @@
 			(project "sodiumBMS"
 				(path "/fcdd2084-f4ec-4b1b-b9ac-497c327c0303"
 					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Current:INA180A4")
+		(at 234.95 22.86 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d260269b-6448-4322-922c-384e7ba23c64")
+		(property "Reference" "U3"
+			(at 229.2919 33.02 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "INA180A4"
+			(at 229.2919 30.48 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+			(at 236.22 21.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/ina180.pdf"
+			(at 238.76 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Current Sense Amplifier, 1 Circuit, Rail-to-Rail, 26V, Gain 200 V/V, SOT-23-5"
+			(at 234.95 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "42d5644c-c92f-4a5d-abb8-873de2fec6cb")
+		)
+		(pin "3"
+			(uuid "a179898f-ab7d-471b-98ce-db6969a6d07f")
+		)
+		(pin "2"
+			(uuid "93cc1359-74b4-4eb5-b6a2-4d76587ae753")
+		)
+		(pin "4"
+			(uuid "660364bf-7797-4340-9435-ab13c2eaaecd")
+		)
+		(pin "5"
+			(uuid "b45eff3d-9692-4398-b789-fbd29bce5737")
+		)
+		(instances
+			(project "sodiumBMS"
+				(path "/fcdd2084-f4ec-4b1b-b9ac-497c327c0303"
+					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -5267,8 +4533,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 220.98 17.78 0)
+		(lib_id "Amplifier_Current:INA180A4")
+		(at 186.69 22.86 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5276,31 +4542,32 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "dc7a29e1-1f09-4a81-99d3-82325ff945d9")
-		(property "Reference" "H9"
-			(at 223.52 15.24 0)
+		(fields_autoplaced yes)
+		(uuid "e5f0c246-9e1e-4481-be93-ffd124caead4")
+		(property "Reference" "U2"
+			(at 181.0319 33.02 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 0.889 0.889)
+					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "dischg_c3"
-			(at 217.932 12.7 0)
+		(property "Value" "INA180A4"
+			(at 181.0319 30.48 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 0.889 0.889)
+					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 220.98 17.78 0)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+			(at 187.96 21.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5310,8 +4577,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 220.98 17.78 0)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/ina180.pdf"
+			(at 190.5 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5321,8 +4588,8 @@
 				)
 			)
 		)
-		(property "Description" "Mounting Hole with connection"
-			(at 220.98 17.78 0)
+		(property "Description" "Current Sense Amplifier, 1 Circuit, Rail-to-Rail, 26V, Gain 200 V/V, SOT-23-5"
+			(at 186.69 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5333,12 +4600,24 @@
 			)
 		)
 		(pin "1"
-			(uuid "c35d9ca3-3fe4-4c7a-b44d-08bbdf11fc81")
+			(uuid "cff4a3cd-0114-4368-b543-515c0a00cb55")
+		)
+		(pin "3"
+			(uuid "eea6ec38-a8e2-4570-9e33-240e763b3079")
+		)
+		(pin "2"
+			(uuid "6119bd2a-d0bd-4155-846b-8735a1d5610f")
+		)
+		(pin "4"
+			(uuid "7c2125b0-10d4-492a-9c69-6d020bf6c8e0")
+		)
+		(pin "5"
+			(uuid "0283897d-b4f2-48c3-a111-7320ac8672d3")
 		)
 		(instances
 			(project "sodiumBMS"
 				(path "/fcdd2084-f4ec-4b1b-b9ac-497c327c0303"
-					(reference "H9")
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -5428,7 +4707,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 137.16 91.44 0)
+		(at 167.64 27.94 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5439,7 +4718,7 @@
 		(fields_autoplaced yes)
 		(uuid "fcb10cd6-028c-4979-a30c-0995309df49f")
 		(property "Reference" "#PWR01"
-			(at 137.16 97.79 0)
+			(at 167.64 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5450,7 +4729,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 137.16 96.52 0)
+			(at 167.64 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5461,7 +4740,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 137.16 91.44 0)
+			(at 167.64 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5472,7 +4751,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 137.16 91.44 0)
+			(at 167.64 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5483,7 +4762,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 137.16 91.44 0)
+			(at 167.64 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
