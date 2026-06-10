@@ -2820,7 +2820,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "0.05"
 			(at 215.9 24.1299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2902,7 +2902,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "100k"
 			(at 162.56 74.9299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3819,7 +3819,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "20k"
 			(at 162.56 67.3099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3901,7 +3901,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "100k"
 			(at 144.78 55.8799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3983,7 +3983,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "20k"
 			(at 153.67 59.6899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4065,7 +4065,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "0.05"
 			(at 170.18 24.1299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4225,7 +4225,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "100k"
 			(at 153.67 67.3099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4646,7 +4646,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "20k"
 			(at 144.78 48.2599 0)
 			(show_name no)
 			(do_not_autoplace no)
