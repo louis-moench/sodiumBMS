@@ -26,4 +26,9 @@ one regulator that goes 5v to 12v is the MT3608, which can do 650mA Iout at 89% 
 [mt3608 datasheet](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8907/MT3608.pdf)
 however it's sufficiently cheap at around 40 cents per  
 it requires external passives like the others  
-we could also use two of them in parallel!  
+we could also use two of them in parallel! 
+
+the final option which comes direct from china is the XLSemi XL6019E1 which easily hits 650mA and above - we will use this
+[lcsc link](https://www.lcsc.com/product-detail/DC-DC-Converters_XLSEMI-XL6019E1_C73018.html)
+
+![datasheet example for 5 to 12v](xl6019e1_example.png)
