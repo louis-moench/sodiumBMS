@@ -420,13 +420,21 @@
         "uuid": "fcdd2084-f4ec-4b1b-b9ac-497c327c0303"
       }
     ],
-    "used_designators": "#PWR11-21,L1,R11-15,U5,Q1-3,D1,C6-9",
+    "used_designators": "H1-10,#PWR1-8,#PWR11-27,L1,R1-8,R11-26,F1,U2-3,U5-7,Q1-3,D1,C1-3,C6-12",
     "variants": []
   },
   "sheets": [
     [
       "fcdd2084-f4ec-4b1b-b9ac-497c327c0303",
       "Root"
+    ],
+    [
+      "3905886b-1128-471c-8557-f7be6cb7447b",
+      "Current and Voltage sensing"
+    ],
+    [
+      "2101f6f5-8614-4998-96ad-a225cab16857",
+      "charge power supply"
     ]
   ],
   "text_variables": {},
