@@ -16,4 +16,4 @@ this means we have an Isw of (Iin + Il/2), estimating Il to be 0.3 x 1.8A, Isw =
 
 this is much higher than the Isw of the MC34063. however we can use an external FET to raise the current limit substantially. we will use our friend the jellybean AO3400A which can do like 5A easy  
 
-
+MUST USE P CHANNEL FET, possible with another fet before it for the external switch for mc34063. also move the resistor on the gate
