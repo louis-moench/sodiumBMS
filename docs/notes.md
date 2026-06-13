@@ -10,25 +10,10 @@ then we monitor cell voltages and do some active balancing... or passive for eas
 we use the MC34063AD to take usb in 5v to 12v for the series battery stack - this is a boost conv control IC so we need to make the boost circuit  
 [digikey page](https://www.digikey.com/en/products/detail/onsemi/MC34063ADR2G/919066)
 
-okay so the above idea may not be great. our input current has to be 1.8A, since we have Vin = 5, Vout = 12, ballpark efficiency of 0.85, and Iout = 0.65A, and Iin = (Vout x Iout)/(Vin x efficiency)  
+our input current has to be 1.8A, since we have Vin = 5, Vout = 12, ballpark efficiency of 0.85, and Iout = 0.65A, and Iin = (Vout x Iout)/(Vin x efficiency)  
 
 this means we have an Isw of (Iin + Il/2), estimating Il to be 0.3 x 1.8A, Isw = (1.8+0.27) = 2.07A  
 
-this is much higher than the Isw of the MC34063  
+this is much higher than the Isw of the MC34063. however we can use an external FET to raise the current limit substantially. we will use our friend the jellybean AO3400A which can do like 5A easy  
 
-this might be expensive. one alternative is to put transistors that switch the battery cells from series to parallel when charging. another is to instead run the cells in parallel and have a boost converter take the battery output up to 12V-ish to power series LEDs.  
 
-if we switch the cell configuration, we can't use the batteries at their series voltage while charging them. well we probably can't use them at all while charging; the current path will probably only go to the output in series config.  
-
-if we do 3s like we said, we need a 5v in to 12v out regulator that can do about 2A Isw  
-
-one regulator that goes 5v to 12v is the MT3608, which can do 650mA Iout at 89% efficiency. not sure how hot it would get though
-[mt3608 datasheet](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8907/MT3608.pdf)
-however it's sufficiently cheap at around 40 cents per  
-it requires external passives like the others  
-we could also use two of them in parallel! 
-
-the final option which comes direct from china is the XLSemi XL6019E1 which easily hits 650mA and above - we will use this
-[lcsc link](https://www.lcsc.com/product-detail/DC-DC-Converters_XLSEMI-XL6019E1_C73018.html)
-
-![datasheet example for 5 to 12v](xl6019e1_example.png)
